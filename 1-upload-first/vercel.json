@@ -1,0 +1,18 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/paid-ads/electric-motorcycle/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }]
+    },
+    {
+      "source": "/(img|media|brochures|assets)/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [{ "key": "X-Frame-Options", "value": "SAMEORIGIN" }]
+    }
+  ]
+}

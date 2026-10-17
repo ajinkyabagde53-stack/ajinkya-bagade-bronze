@@ -1,0 +1,1200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORRA Electric Motorcycle · Paid Acquisition Case Study | Ajinkya Bagade</title>
+<meta name="description" content="A complete paid acquisition strategy for ORRA, a €30K premium electric motorcycle brand: Google and Meta budget, funnel architecture, creatives, a live landing page and measurement logic. A speculative portfolio case study.">
+<link rel="canonical" href="https://ajinkya-bagade-bronze.vercel.app/case-studies/electric-motorcycle-paid-acquisition">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ajinkya Bagade · Portfolio">
+<meta property="og:url" content="https://ajinkya-bagade-bronze.vercel.app/case-studies/electric-motorcycle-paid-acquisition">
+<meta property="og:title" content="Selling a €30,000 motorcycle nobody has heard of">
+<meta property="og:description" content="Paid acquisition strategy for ORRA, a premium electric motorcycle: €10K/month across Google and Meta, funnel, creatives, landing page and KPI logic.">
+<meta property="og:image" content="https://ajinkya-bagade-bronze.vercel.app/assets/orra/og-case.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Selling a €30,000 motorcycle nobody has heard of">
+<meta name="twitter:image" content="https://ajinkya-bagade-bronze.vercel.app/assets/orra/og-case.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%235A4128'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Georgia,serif'%20font-size='32'%20font-weight='bold'%20fill='%23ede7db'%20text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E">
+<noscript><style>.hero .subh,.hero-cta,.hstats,.hmeta,.hero .kick,.hero .stand,.hero h1 .ln>span,.rv{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#1A1714; --surface:#201C18; --surface2:#262019; --raise:#2b241c;
+    --line:#322C25; --line2:#3d352b;
+    --text:#EDE7DB; --mut:#A79E90; --mut2:#867c6d;
+    --emer:#C9A47B; --emerd:#B08A5E; --emerdim:#5A4128;
+  }
+  html{scroll-behavior:auto}
+  body{background:var(--bg);color:var(--text);
+    font-family:'Outfit','Segoe UI',Arial,sans-serif;-webkit-font-smoothing:antialiased;
+    line-height:1.6;overflow-x:hidden}
+  .serif{font-family:'Cormorant Garamond',Georgia,serif}
+  em{font-style:italic}
+
+  /* ---------- layout ---------- */
+  .shell{display:grid;grid-template-columns:230px 1fr;max-width:1240px;margin:0 auto}
+  @media(max-width:900px){.shell{grid-template-columns:1fr}}
+
+  /* left nav */
+  nav.rail{position:sticky;top:0;height:100vh;padding:46px 22px;display:flex;flex-direction:column;gap:8px;
+    border-right:1px solid var(--line)}
+  @media(max-width:900px){nav.rail{display:none}}
+  .rail .brandmark{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:600;letter-spacing:.3px;margin-bottom:8px}
+  .rail .brandmark span{color:var(--text)}
+  .rail .railsub{font-size:11px;color:var(--mut2);letter-spacing:.4px;margin-bottom:26px;line-height:1.5}
+  .rail a{display:flex;align-items:center;gap:12px;font-size:12.5px;color:var(--mut2);text-decoration:none;
+    padding:7px 0;letter-spacing:.3px;transition:color .25s}
+  .rail a .dot{width:6px;height:6px;border-radius:50%;background:var(--line2);transition:all .25s}
+  .rail a:hover{color:var(--text)}
+  .rail a.on{color:var(--text)}
+  .rail a.on .dot{background:var(--emer);box-shadow:0 0 0 4px rgba(201,164,123,.14)}
+  .rail .num{font-size:10px;color:var(--mut2);width:14px}
+
+  main{min-width:0;padding:0 clamp(20px,5vw,74px)}
+  section{padding:58px 0;border-bottom:1px solid var(--line)}
+  section:last-child{border-bottom:none}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--text)}
+  h2.sec{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(24px,3.3vw,34px);letter-spacing:-.4px;
+    line-height:1.1;margin:16px 0 8px}
+  .sec-lede{color:var(--mut);font-size:15px;max-width:640px;font-weight:300;margin-bottom:26px}
+  h3.sub{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500;letter-spacing:-.2px;
+    margin:30px 0 14px;color:var(--text)}
+  p.body{color:var(--mut);font-weight:300;font-size:14.5px;max-width:660px;margin-bottom:12px}
+  p.body b,p.body strong{color:var(--text);font-weight:500}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+  .rv.in{opacity:1;transform:none}
+
+  /* ---------- hero ---------- */
+  .hero{padding:clamp(70px,13vh,130px) 0 64px;border-bottom:1px solid var(--line);position:relative}
+  .hero .kick{font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--text)}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,6.4vw,66px);line-height:1.02;
+    letter-spacing:-1.2px;margin:20px 0 20px}
+  .hero h1 em{color:var(--mut);font-weight:400}
+  .hero .stand{font-size:clamp(15px,2vw,18px);color:var(--mut);font-weight:300;max-width:600px;line-height:1.6}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}
+  .chip{font-size:11.5px;letter-spacing:.5px;color:var(--text);border:1px solid var(--line2);
+    padding:8px 14px;border-radius:100px;background:var(--surface)}
+  .chip.hl{border-color:var(--emerdim);color:var(--text)}
+
+  /* thesis band */
+  .thesis{background:var(--surface);border:1px solid var(--line);border-left:2px solid var(--emer);
+    border-radius:12px;padding:26px 30px;margin:8px 0 4px}
+  .thesis p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(16px,2.2vw,20px);
+    line-height:1.5;color:var(--text);font-weight:400}
+  .thesis p b{font-style:normal;color:var(--text);font-weight:600}
+
+  /* assumptions grid */
+  .agrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:8px}
+  @media(max-width:640px){.agrid{grid-template-columns:1fr}}
+  .acell{background:var(--surface);padding:18px 20px}
+  .acell .k{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text);margin-bottom:7px}
+  .acell .v{font-size:13.5px;color:var(--mut);font-weight:300;line-height:1.55}
+  .acell .v b{color:var(--text);font-weight:500}
+
+  /* budget bar */
+  .budget{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px 28px;margin-top:4px}
+  .btrack{display:flex;height:56px;border-radius:8px;overflow:hidden;margin:6px 0 18px}
+  .bseg{display:flex;flex-direction:column;justify-content:center;padding:0 20px;width:0;transition:width 1.1s cubic-bezier(.5,0,.1,1)}
+  .bseg.g{background:linear-gradient(180deg,#B08A5E,#2f8054)}
+  .bseg.m{background:var(--raise);border-left:1px solid var(--line2)}
+  .bseg .bn{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px}
+  .bseg.g .bn{color:#0f130f} .bseg.g .bl{color:#123122}
+  .bseg .bl{font-size:11px;letter-spacing:.5px}
+  .bseg.m .bn{color:var(--text)} .bseg.m .bl{color:var(--mut)}
+  .brole{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:640px){.brole{grid-template-columns:1fr}}
+  .brole .r .rt{font-size:12px;font-weight:600;color:var(--text);letter-spacing:.5px;margin-bottom:4px}
+  .brole .r .rd{font-size:13px;color:var(--mut);font-weight:300;line-height:1.5}
+  .footnote{font-size:12.5px;color:var(--mut2);font-weight:300;margin-top:16px;font-style:italic}
+
+  /* two-col plan */
+  .plan{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+  @media(max-width:700px){.plan{grid-template-columns:1fr}}
+  .phase{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+  .phase .ph{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--text);margin-bottom:14px}
+  .phase ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+  .phase li{font-size:13.5px;color:var(--mut);font-weight:300;line-height:1.5;padding-left:18px;position:relative}
+  .phase li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--emerd)}
+
+  /* tables */
+  .tbl{width:100%;border-collapse:collapse;margin-top:4px;font-size:13.5px}
+  .tbl th{text-align:left;font-size:10.5px;font-weight:600;letter-spacing:1.3px;text-transform:uppercase;
+    color:var(--mut2);padding:11px 14px;border-bottom:1px solid var(--line2)}
+  .tbl td{padding:12px 14px;border-bottom:1px solid var(--line);color:var(--mut);font-weight:300;vertical-align:top}
+  .tbl td b,.tbl td strong{color:var(--text);font-weight:500}
+  .tbl tr:hover td{background:var(--surface)}
+  .tbl .em{color:var(--text);font-weight:500}
+  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface2)}
+  .tblwrap .tbl th:first-child,.tblwrap .tbl td:first-child{padding-left:20px}
+  .tblwrap .tbl tr:last-child td{border-bottom:none}
+
+  /* meta cards */
+  .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:4px}
+  @media(max-width:760px){.cards3{grid-template-columns:1fr}}
+  .fcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 20px 22px;position:relative;overflow:hidden}
+  .fcard .stage{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:600;letter-spacing:.5px}
+  .fcard .obj{font-size:11.5px;color:var(--text);font-weight:500;margin:3px 0 14px;letter-spacing:.3px}
+  .fcard .aud{font-size:13px;color:var(--mut);font-weight:300;line-height:1.5}
+  .fcard .bud{margin-top:16px;font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500}
+  .fcard .bud span{font-size:11px;color:var(--mut2);font-family:'Outfit';margin-left:4px}
+
+  .flowline{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px;
+    background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .flowline .fl{font-size:12px;color:var(--mut);font-weight:300}
+  .flowline b{color:var(--text)}
+
+  /* comparison (two ads) */
+  .compare{display:grid;grid-template-columns:130px 1fr 1fr;gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:4px}
+  @media(max-width:700px){.compare{grid-template-columns:1fr;}
+    .compare .cc.lbl{background:var(--surface2);font-weight:600;color:var(--text)}}
+  .compare .cc{background:var(--surface);padding:13px 16px;font-size:13px;font-weight:300;color:var(--mut);line-height:1.5}
+  .compare .cc.hd{background:var(--surface2);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text)}
+  .compare .cc.lbl{font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--mut2)}
+  .compare .cc b{color:var(--text);font-weight:500}
+
+  /* account tree */
+  .tree{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+  .camp{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .camp .ch{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;
+    background:var(--surface2);border-bottom:1px solid var(--line)}
+  .camp .ch .cn{font-size:14px;font-weight:500;color:var(--text)}
+  .camp .ch .cn i{color:var(--text);font-style:normal;font-family:'Cormorant Garamond',serif;margin-right:8px}
+  .camp .ch .tag{font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;
+    color:var(--text);border:1px solid var(--emerdim);border-radius:100px;padding:3px 10px}
+  .camp .ch .tag.mut{color:var(--mut2);border-color:var(--line2)}
+  .camp .ags{display:flex;flex-wrap:wrap;gap:8px;padding:14px 18px}
+  .ag{font-size:12px;color:var(--mut);font-weight:400;background:var(--raise);border:1px solid var(--line2);
+    border-radius:6px;padding:6px 12px}
+
+  /* market tabs */
+  .tabs{display:flex;gap:6px;margin:6px 0 14px;flex-wrap:wrap}
+  .tab{font-size:12.5px;font-weight:500;letter-spacing:.3px;color:var(--mut);background:var(--surface);
+    border:1px solid var(--line2);border-radius:100px;padding:8px 16px;cursor:pointer;transition:all .2s}
+  .tab:hover{color:var(--text)}
+  .tab.on{background:var(--emerd);color:#0f130f;border-color:var(--emerd)}
+  .mkt{display:none} .mkt.on{display:block;animation:fade .4s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .kwgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  @media(max-width:640px){.kwgrid{grid-template-columns:1fr}}
+  .kwc{background:var(--surface);padding:16px 18px}
+  .kwc .kh{font-size:10.5px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--mut2);margin-bottom:8px}
+  .kwc .kv{font-size:14px;color:var(--text);font-weight:400;font-family:'Cormorant Garamond',serif}
+  .kwc .kv2{font-size:12px;color:var(--mut);font-weight:300;margin-top:3px}
+
+  /* neg chips */
+  .negs{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+  .neg{font-size:12.5px;color:var(--mut);background:var(--surface);border:1px solid var(--line2);
+    border-radius:6px;padding:7px 12px}
+  .neg b{color:#d98a7a;font-weight:500;font-family:'Cormorant Garamond',serif}
+
+  /* two-track flow */
+  .track{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:12px}
+  .track .tk{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text);margin-bottom:14px}
+  .track.crm .tk{color:var(--mut)}
+  .steps{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+  .stp{font-size:12.5px;font-weight:400;padding:9px 14px;border-radius:7px;background:var(--raise);border:1px solid var(--line2);color:var(--mut)}
+  .stp.key{background:var(--emerd);color:#0f130f;border-color:var(--emerd);font-weight:500}
+  .stp.gold{background:var(--surface2);color:var(--text);border-color:var(--emerdim);font-weight:500}
+  .arw{color:var(--mut2);font-size:13px}
+
+  /* diagnosis */
+  .scenario{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin-bottom:22px}
+  .scenario .sh{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#d98a7a;margin-bottom:10px}
+  .scenario p{font-size:14.5px;color:var(--mut);font-weight:300;line-height:1.6}
+  .scenario p b{color:var(--text);font-weight:500}
+  .checks{counter-reset:c;display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .check{background:var(--surface);padding:16px 20px 16px 58px;position:relative}
+  .check::before{counter-increment:c;content:counter(c);position:absolute;left:20px;top:16px;
+    font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:600;color:var(--text);
+    width:24px;height:24px;border:1px solid var(--emerdim);border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .check .ck{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:3px}
+  .check .cv{font-size:13px;color:var(--mut);font-weight:300;line-height:1.5}
+  .actions{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+  @media(max-width:760px){.actions{grid-template-columns:1fr}}
+  .act{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:20px;border-top:2px solid var(--emerd)}
+  .act .an{font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--text);margin-bottom:2px}
+  .act .at{font-size:14px;font-weight:500;color:var(--text);margin:6px 0 6px}
+  .act .ad{font-size:12.5px;color:var(--mut);font-weight:300;line-height:1.5}
+  .timing{margin-top:18px;font-size:13px;color:var(--mut);font-weight:300;line-height:1.6;
+    border-left:2px solid var(--line2);padding-left:16px}
+  .timing b{color:var(--text);font-weight:500}
+
+  /* footer */
+  footer{padding:44px 0 70px;color:var(--mut2);font-size:12px;font-weight:300}
+  footer .fnote{font-style:italic;max-width:560px;line-height:1.6}
+  .disc{font-size:11.5px;color:var(--mut2);margin-top:8px}
+
+  /* ════════ MOTION EDITION ════════ */
+  body{background:#161411}
+  .lenis.lenis-smooth{scroll-behavior:auto!important}
+  .grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:90;opacity:.055;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    animation:gr 1s steps(6) infinite}
+  @keyframes gr{0%,100%{transform:translate(0,0)}25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(3%,3%)}}
+  .vskew{will-change:transform}
+  .kick,.eyebrow,.acell .k,.phase .ph,.track .tk,.brole .r .rt{color:var(--mut)!important;letter-spacing:.2em}
+  .eyebrow{display:flex;align-items:center;gap:12px}
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--emer)}
+
+  /* hero */
+  .hero{padding-top:clamp(90px,16vh,160px)}
+  .hero h1{font-weight:300;font-size:clamp(46px,6.5vw,108px);line-height:.92;letter-spacing:-.03em;margin:26px 0 30px}
+  .hero h1 em{color:var(--text);font-weight:300}
+  .hero h1 .ln{display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.08em}
+  .hero h1 .ln>span{display:inline-block;transform:translateY(108%) rotate(3deg);transform-origin:0 100%;transition:transform 1.3s cubic-bezier(.19,1,.22,1)}
+  .hero h1 .ln:nth-child(2)>span{transition-delay:.12s}.hero h1 .ln:nth-child(3)>span{transition-delay:.24s}
+  .ready .hero h1 .ln>span{transform:none}
+  .hero .kick,.hero .stand,.chips{opacity:0;transform:translateY(14px);transition:opacity 1s ease .7s,transform 1s cubic-bezier(.2,.8,.2,1) .7s}
+  .hero .kick{transition-delay:.1s}
+  .ready .hero .kick,.ready .hero .stand,.ready .chips{opacity:1;transform:none}
+  .hero .subh{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(22px,2.8vw,34px);line-height:1.2;color:var(--text);margin:-8px 0 20px;
+    opacity:0;transform:translateY(14px);transition:opacity 1s ease .55s,transform 1s cubic-bezier(.2,.8,.2,1) .55s}
+  .ready .hero .subh{opacity:1;transform:none}
+  .chip{transition:transform .5s cubic-bezier(.19,1,.22,1),border-color .3s}
+  .chip:hover{transform:translateY(-3px);border-color:var(--emer)}
+  .chip.hl{border-color:var(--emer);background:var(--emer);color:#0f130f!important}
+
+  /* section titles: word mask reveal */
+  h2.sec{font-weight:400;font-size:clamp(38px,5.2vw,72px);line-height:1;letter-spacing:-.02em;margin:18px 0 14px}
+  h2.sec .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em}
+  h2.sec .w>span{display:inline-block;transform:translateY(105%);transition:transform 1.1s cubic-bezier(.19,1,.22,1)}
+  .rv.in h2.sec .w>span{transform:none}
+  h3.sub{font-size:22px;font-weight:500}
+  .sec-lede{font-size:16px}
+  section{padding:clamp(70px,12vh,120px) 0}
+
+  /* cards feel physical */
+  .phase,.fcard,.act,.acell,.kwc,.camp,.track{transition:transform .6s cubic-bezier(.19,1,.22,1),border-color .3s,background .3s}
+  .phase:hover,.fcard:hover,.act:hover,.camp:hover{transform:translateY(-4px);border-color:var(--line2)}
+  .fcard::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--emer);transform:scaleX(0);transform-origin:left;transition:transform .8s cubic-bezier(.19,1,.22,1)}
+  .fcard:hover::after{transform:scaleX(1)}
+  .fcard .bud,.bseg .bn{font-variant-numeric:tabular-nums}
+  .tbl tbody tr{opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s ease}
+  .rv.in .tbl tbody tr{opacity:1;transform:none}
+  .check{transition:background .3s}.check:hover{background:var(--surface2)}
+  .stp{transition:transform .4s cubic-bezier(.19,1,.22,1)}
+  @keyframes pop{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
+
+
+  /* hero number band */
+  .hstats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(40px,7vh,70px);border-top:1px solid var(--line2);opacity:0;transform:translateY(16px);transition:opacity 1s ease .9s,transform 1s cubic-bezier(.2,.8,.2,1) .9s}
+  .ready .hstats{opacity:1;transform:none}
+  .hs{padding:26px 20px 0 0;border-right:1px solid var(--line);margin-right:20px}
+  .hs:last-child{border-right:0;margin-right:0}
+  .hs b{display:block;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(40px,4.8vw,78px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .hs:first-child b{font-style:italic}
+  .hs i{display:block;font-style:normal;font-size:12px;color:var(--mut);margin-top:10px;letter-spacing:.02em}
+  .hmeta{margin-top:30px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut2);opacity:0;transition:opacity 1s 1.2s}
+  .ready .hmeta{opacity:1}
+  .hmeta span{margin:0 12px;color:var(--emer)}
+  @media(max-width:760px){.hstats{grid-template-columns:1fr 1fr}.hs{border-right:0;margin-right:0;padding-bottom:22px}}
+
+  /* pinned scrollytelling */
+  .pin{position:relative}
+  .pin-in{position:sticky;top:0;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:40px 0}
+  #pinBudget{height:230vh}
+  #pinFlow{height:260vh}
+  #pinBudget .budget{padding:34px 34px 28px}
+  #pinBudget .btrack{height:clamp(120px,18vh,170px);border-radius:10px;background:var(--raise)}
+  #pinBudget .bseg{transition:none;min-width:0;overflow:hidden;justify-content:flex-end;padding-bottom:18px}
+  #pinBudget .bseg .bn{font-weight:300;font-size:clamp(38px,5vw,76px);line-height:1;letter-spacing:-.02em;white-space:nowrap}
+  #pinBudget .bseg .bl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-top:8px;white-space:nowrap}
+  #pinBudget .brole .r{opacity:.25;transition:opacity .6s}
+  #pinBudget .brole .r.on{opacity:1}
+  .flowcap{display:flex;align-items:baseline;gap:22px;margin-bottom:26px;min-height:1.1em}
+  .fc-n{font-size:12px;letter-spacing:.2em;color:var(--mut);font-variant-numeric:tabular-nums}
+  .fc-t{font-weight:300;font-size:clamp(46px,6.6vw,104px);line-height:1;letter-spacing:-.02em;display:inline-block}
+  .fc-t.swap{animation:capIn .6s cubic-bezier(.19,1,.22,1)}
+  @keyframes capIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+  #pinFlow .stp{opacity:.28;transform:scale(.97);transition:opacity .45s,transform .45s cubic-bezier(.19,1,.22,1),background .45s,color .45s,border-color .45s}
+  #pinFlow .stp.key,#pinFlow .stp.gold{background:var(--raise);color:var(--mut);border-color:var(--line2)}
+  #pinFlow .stp.lit{opacity:1;transform:none}
+  #pinFlow .stp.lit.key{background:var(--emerd);color:#0f130f;border-color:var(--emerd)}
+  #pinFlow .stp.lit.gold{background:var(--surface2);color:var(--text);border-color:var(--emer)}
+  #pinFlow .stp.now{box-shadow:0 0 0 4px rgba(201,164,123,.18)}
+  #pinFlow .arw{opacity:.25;transition:opacity .45s}#pinFlow .arw.lit{opacity:1}
+  #pinFlow .track{padding:26px 26px}
+  #pinFlow .stp{font-size:14px;padding:12px 18px}
+  @media(max-width:900px),(prefers-reduced-motion:reduce){#pinBudget,#pinFlow{height:auto}.pin-in{position:static;min-height:0;padding:0}}
+
+  /* ad creatives showcase */
+  .adshow{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,4vw,56px);margin:10px 0 34px;padding:clamp(24px,5vw,56px) clamp(8px,4vw,56px);background:radial-gradient(90% 70% at 50% 45%,#262019 0%,#1a1714 70%);border:1px solid var(--line);border-radius:14px;perspective:1400px}
+  .adc{margin:0;display:flex;flex-direction:column;align-items:center}
+  .phone{position:relative;width:100%;max-width:300px;aspect-ratio:941/1672;border-radius:34px;padding:9px;background:#0c0b0a;box-shadow:0 0 0 1px rgba(237,231,219,.10),0 40px 80px -30px rgba(0,0,0,.85),inset 0 0 0 1px rgba(255,255,255,.04);
+    transform:translateY(80px) rotate(calc(var(--r,0) * 6deg));opacity:0;transition:transform 1.4s cubic-bezier(.19,1,.22,1),opacity 1s ease;will-change:transform}
+  .adc:nth-child(2) .phone{transition-delay:.12s}
+  .adshow.in .phone{opacity:1;transform:translateY(var(--py,0px)) rotate(calc(var(--r,0) * 2deg)) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
+  .adshow.in .adc:hover .phone{transition:transform .5s cubic-bezier(.19,1,.22,1)}
+  .phone img{display:block;width:100%;height:100%;object-fit:cover;border-radius:26px}
+  .phone::after{content:"";position:absolute;inset:9px;border-radius:26px;pointer-events:none;background:linear-gradient(115deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 32%);mix-blend-mode:screen}
+  .adc figcaption{margin-top:26px;text-align:center;max-width:300px}
+  .adc .st{display:block;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mut)}
+  .adc .nm{display:block;font-weight:300;font-size:clamp(24px,2.6vw,34px);line-height:1.05;margin:10px 0 8px}
+  .adc .ds{display:block;font-size:12.5px;color:var(--mut);font-weight:300;line-height:1.5}
+  @media(max-width:640px){.adshow{gap:14px;padding:22px 12px}.phone{border-radius:22px;padding:6px}.phone img,.phone::after{border-radius:17px}.phone::after{inset:6px}.adc .ds{display:none}}
+  @media (prefers-reduced-motion:reduce){.phone{opacity:1!important;transform:none!important}}
+  /* rail progress */
+  nav.rail{position:sticky}
+  .rail-prog{position:absolute;right:-1px;top:0;width:1px;height:100%;background:var(--emer);transform-origin:top;transform:scaleY(var(--p,0))}
+  .rail .brandmark{font-size:22px;font-weight:400}
+  @media (prefers-reduced-motion:reduce){.hero h1 .ln>span,h2.sec .w>span,.tbl tbody tr{transform:none!important;opacity:1!important;transition:none!important}.hero .kick,.hero .stand,.chips{opacity:1;transform:none}.grain{animation:none}}
+
+  /* ════════ ORRA EDITION · added components ════════ */
+  .rail .back{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut2);margin-bottom:22px;padding:0}
+  .rail .back:hover{color:var(--text)}
+  .back-m{display:none;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);text-decoration:none;padding-top:24px}
+  @media(max-width:900px){.back-m{display:inline-block}}
+  .tag{display:inline-block;vertical-align:middle;font-family:'Outfit',sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--mut)!important;border:1px dashed var(--line2);border-radius:100px;padding:4px 10px;margin-left:10px;white-space:nowrap}
+  h3.sub .tag{margin-left:12px}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px;opacity:0;transform:translateY(14px);transition:opacity 1s ease .85s,transform 1s cubic-bezier(.2,.8,.2,1) .85s}
+  .ready .hero-cta{opacity:1;transform:none}
+  .hbtn{display:inline-flex;align-items:center;gap:10px;background:var(--emer);color:#0f130f;font-size:12.5px;font-weight:600;letter-spacing:.06em;
+    padding:13px 22px;border-radius:4px;text-decoration:none;transition:transform .4s cubic-bezier(.19,1,.22,1),background .3s}
+  .hbtn:hover{transform:translateY(-2px);background:#6bcb93}
+  .hbtn.ghost{background:transparent;color:var(--text);border:1px solid var(--line2)}
+  .hbtn.ghost:hover{border-color:var(--emer);background:transparent}
+
+  /* challenge */
+  .challenge{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .challenge .ch{background:var(--surface);padding:20px 20px 22px}
+  .challenge .ch span{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--mut2)}
+  .challenge .ch b{display:block;font-weight:500;font-size:14.5px;margin:8px 0 6px}
+  .challenge .ch p{font-size:13px;color:var(--mut);font-weight:300;line-height:1.55}
+  @media(max-width:760px){.challenge{grid-template-columns:1fr}}
+
+  /* system flow */
+  .sys{display:grid;grid-template-columns:1fr auto 1.15fr auto 1fr auto 1.25fr;align-items:center;gap:10px;margin-top:4px}
+  .sys .node{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 16px 18px;min-height:100%}
+  .sys .node .nk{display:block;font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mut2);margin-bottom:8px}
+  .sys .node b{display:block;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:20px;line-height:1.15;color:var(--text)}
+  .sys .node i{display:block;font-style:normal;font-size:12px;color:var(--mut);margin-top:4px}
+  .sys .node.g{border-top:2px solid var(--emer)}
+  .sys .node.m{border-top:2px solid var(--line2)}
+  .sys .node.crm b{font-size:15px;line-height:1.4}
+  .sys .split2{display:flex;flex-direction:column;gap:10px}
+  .sys .sarw{color:var(--mut2);font-size:16px}
+  @media(max-width:980px){.sys{grid-template-columns:1fr}.sys .sarw{transform:rotate(90deg);justify-self:center}}
+
+  /* funnel */
+  .funnel{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:6px}
+  .fs{width:var(--w);display:grid;grid-template-columns:90px 1fr;align-items:center;gap:6px 16px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 20px;
+    transition:transform .6s cubic-bezier(.19,1,.22,1),border-color .3s}
+  .fs:hover{transform:scale(1.01);border-color:var(--line2)}
+  .fs .fst{grid-row:span 2;font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--emer)}
+  .fs b{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;line-height:1.1}
+  .fs i{font-style:normal;font-size:12.5px;color:var(--mut);font-weight:300}
+  .fs.off{background:var(--surface2)}
+  .fs.off .fst{color:var(--mut)}
+  .fs.gold{border-color:var(--emerdim)}
+  .fdiv{width:100%;display:flex;align-items:center;gap:14px;margin:6px 0;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut2)}
+  .fdiv::before,.fdiv::after{content:"";flex:1;height:1px;background:repeating-linear-gradient(90deg,var(--line2) 0 6px,transparent 6px 12px)}
+  @media(max-width:640px){.fs{width:100%!important;grid-template-columns:1fr}.fs .fst{grid-row:auto}}
+
+  /* channel roadmap */
+  .chan{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .chan .cr{display:grid;grid-template-columns:200px 130px 1fr;gap:16px;align-items:baseline;padding:15px 20px;background:var(--surface);border-bottom:1px solid var(--line)}
+  .chan .cr:last-child{border-bottom:0}
+  .chan .cr b{font-weight:500;font-size:14px}
+  .chan .cr p{font-size:13px;color:var(--mut);font-weight:300;line-height:1.5}
+  .when{justify-self:start;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--line2);color:var(--mut);border-radius:100px;padding:3px 10px}
+  .when.now{background:var(--emer);border-color:var(--emer);color:#0f130f}
+  .when.no{border-style:dashed;color:var(--mut2)}
+  @media(max-width:700px){.chan .cr{grid-template-columns:1fr auto}.chan .cr p{grid-column:1/-1}}
+
+  .callout-note{margin-top:18px;background:var(--surface2);border:1px solid var(--line);border-left:2px solid #d9b26a;border-radius:12px;padding:20px 24px}
+  .cn-k{font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#d9b26a;margin-bottom:8px}
+  .callout-note p,.revnote p{font-size:14px;color:var(--mut);font-weight:300;line-height:1.65}
+  .callout-note b,.revnote b{color:var(--text);font-weight:500}
+
+  .kwgroups{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .kg{background:var(--surface);padding:16px 18px}
+  .kg .kh{font-size:10.5px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--mut2);margin-bottom:10px}
+  .kg ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+  .kg li{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--text)}
+  .kg sup{font-family:'Outfit';font-size:10px;color:#d9b26a}
+  @media(max-width:760px){.kwgroups{grid-template-columns:1fr 1fr}}
+
+  .serp{background:#fff;color:#202124;border-radius:12px;padding:18px 22px;max-width:640px;font-family:Arial,Helvetica,sans-serif}
+  .sp-top{display:flex;gap:8px;align-items:center;font-size:12px;color:#202124}
+  .sp-ad{font-weight:700}
+  .sp-url{color:#4d5156}
+  .sp-h{font-size:19px;color:#1a0dab;margin:6px 0 4px;line-height:1.3}
+  .sp-d{font-size:13.5px;color:#4d5156;line-height:1.55}
+
+  .compare.c3{grid-template-columns:120px repeat(3,1fr)}
+  @media(max-width:860px){.compare.c3{grid-template-columns:1fr}}
+
+  /* three phones */
+  .adshow{grid-template-columns:repeat(3,1fr)}
+  .phone{max-width:250px}
+  .adc figcaption{max-width:260px}
+  @media(max-width:760px){.adshow{grid-template-columns:1fr;max-width:300px;margin-left:auto;margin-right:auto}.adc .ds{display:block}}
+
+  .revnote{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:4px}
+  .revnote img{width:120px;height:auto;border-radius:10px;filter:grayscale(.3);opacity:.85;outline:1px solid var(--line2)}
+  @media(max-width:560px){.revnote{grid-template-columns:1fr}}
+
+  /* device mockups */
+  .devices{position:relative;display:grid;grid-template-columns:1fr 210px;gap:clamp(18px,3vw,40px);align-items:end;padding:clamp(24px,4vw,48px);
+    background:radial-gradient(90% 80% at 40% 40%,#262019 0%,#1a1714 75%);border:1px solid var(--line);border-radius:14px;margin-top:6px}
+  .screen{position:relative;overflow:hidden;background:#0b0c0e}
+  .screen iframe{position:absolute;left:0;top:0;border:0;transform-origin:0 0;pointer-events:none;background:#0b0c0e}
+  .screen.live iframe{pointer-events:auto}
+  .shield{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;background:rgba(10,10,10,0);border:0;cursor:pointer;transition:background .4s}
+  .shield span{font-family:'Outfit',sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#0f130f;background:var(--emer);
+    padding:10px 16px;border-radius:100px;opacity:0;transform:translateY(6px);transition:opacity .35s,transform .35s cubic-bezier(.19,1,.22,1);box-shadow:0 10px 30px -10px rgba(0,0,0,.6)}
+  .shield:hover,.shield:focus-visible{background:rgba(10,10,10,.28)}
+  .shield:hover span,.shield:focus-visible span{opacity:1;transform:none}
+  .screen.live .shield{display:none}
+  .laptop .lid{background:#0c0b0a;border-radius:14px 14px 4px 4px;padding:14px 14px 18px;box-shadow:0 0 0 1px rgba(237,231,219,.10),0 50px 90px -40px rgba(0,0,0,.9)}
+  .laptop .screen{border-radius:3px;aspect-ratio:1440/900}
+  .laptop .base{height:14px;margin:0 -5%;background:linear-gradient(180deg,#3a352f,#1d1a16);border-radius:0 0 14px 14px;position:relative}
+  .laptop .base::before{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:16%;height:6px;background:#15130f;border-radius:0 0 8px 8px}
+  .handset{background:#0c0b0a;border-radius:34px;padding:9px;box-shadow:0 0 0 1px rgba(237,231,219,.10),0 40px 80px -30px rgba(0,0,0,.85)}
+  .handset .screen{border-radius:26px;aspect-ratio:390/844}
+  .dev-cta{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:22px}
+  .devnote{font-size:12.5px;color:var(--mut2);font-weight:300;font-style:italic;max-width:420px}
+  @media(max-width:760px){.devices{grid-template-columns:1fr;justify-items:center}.laptop{display:none}.handset{width:min(280px,80vw)}}
+
+  .decisions{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .dc{background:var(--surface);padding:18px 18px 20px}
+  .dc span{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--mut2)}
+  .dc b{display:block;font-weight:500;font-size:14px;margin:6px 0 6px}
+  .dc p{font-size:12.5px;color:var(--mut);font-weight:300;line-height:1.55}
+  .dc code{font-size:11.5px;background:var(--raise);padding:1px 5px;border-radius:4px;color:var(--text)}
+  @media(max-width:1100px){.decisions{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.decisions{grid-template-columns:1fr}}
+
+  /* measurement */
+  .chain{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:4px}
+  .chain span{font-size:13.5px;padding:11px 16px;border-radius:8px;background:var(--surface);border:1px solid var(--line2);color:var(--mut)}
+  .chain span.hi{background:var(--emer);border-color:var(--emer);color:#0f130f;font-weight:600}
+  .chain i{font-style:normal;color:var(--mut2)}
+  .primary{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--emer);border-radius:12px;padding:24px 26px}
+  .primary .pk{font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+  .primary .pv{font-size:clamp(30px,4vw,48px);font-weight:400;line-height:1.05;margin:10px 0 10px;letter-spacing:-.01em}
+  .primary p{font-size:14px;color:var(--mut);font-weight:300;max-width:620px}
+  .supp{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:14px}
+  .supp .sk{font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mut2);margin-right:6px}
+  .supp .neg i{color:var(--mut2)}
+
+  footer .fnav{display:flex;gap:22px;flex-wrap:wrap;margin-top:18px}
+  footer .fnav a{color:var(--text);text-decoration:none;font-size:12px;letter-spacing:.06em;border-bottom:1px solid var(--line2);padding-bottom:3px}
+  footer .fnav a:hover{border-color:var(--emer)}
+  @media (prefers-reduced-motion:reduce){.hero .subh,.hero-cta,.hstats,.hmeta,.hero h1 .ln>span{opacity:1!important;transform:none!important;transition:none!important}}
+
+
+  /* ════════ Sales cycle: click → sale → feedback ════════ */
+  .journey{display:grid;grid-template-columns:1fr 32px 1fr 32px 1fr;align-items:stretch;margin-top:8px}
+  .jcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 22px 24px}
+  .jcard.fb{border-color:var(--emerdim);background:linear-gradient(180deg,rgba(201,164,123,.07),var(--surface) 60%)}
+  .jn{font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+  .fb .jn{color:var(--emer)}
+  .jt{font-size:30px;font-weight:400;line-height:1.05;margin:12px 0 4px;color:var(--text)}
+  .jw{font-size:12.5px;color:var(--mut2);margin-bottom:18px}
+  .jsteps{list-style:none;position:relative;padding-left:22px}
+  .jsteps::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:var(--line2)}
+  .jsteps li{position:relative;font-size:13.5px;color:var(--text);padding:6px 0;line-height:1.35}
+  .jsteps li::before{content:"";position:absolute;left:-21px;top:11px;width:11px;height:11px;border-radius:50%;background:var(--surface);border:1.5px solid var(--line2)}
+  .jsteps li.hi::before{background:var(--emer);border-color:var(--emer)}
+  .jsteps li.gold::before{background:#d9b26a;border-color:#d9b26a}
+  .jsteps li i{font-style:normal;font-size:11.5px;color:var(--mut2);margin-left:6px}
+  .jcard p{font-size:13.5px;color:var(--mut);font-weight:300;line-height:1.6}
+  .jarr{display:flex;align-items:center;justify-content:center;color:var(--mut2);font-size:16px}
+  .jloop{grid-column:1/-1;position:relative;height:40px;margin:0 calc((100% - 64px)/6);border:1.5px solid var(--emer);border-top:0;border-radius:0 0 16px 16px;opacity:.85}
+  .jloop::before{content:"";position:absolute;left:-6px;top:-2px;border:6px solid transparent;border-bottom:8px solid var(--emer);border-top:0}
+  .jloop span{position:absolute;left:50%;bottom:-10px;transform:translateX(-50%);background:#161411;padding:0 14px;white-space:nowrap;
+    font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--emer)}
+  @media(max-width:900px){
+    .journey{grid-template-columns:1fr}
+    .jarr{transform:rotate(90deg);height:30px}
+    .jloop{height:auto;margin:16px 0 0;border:1px solid var(--emerdim);border-radius:10px;padding:12px 14px}
+    .jloop::before{display:none}
+    .jloop span{position:static;transform:none;background:none;padding:0;white-space:normal}
+  }
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="shell">
+
+  <!-- ============ LEFT NAV ============ -->
+  <nav class="rail"><span class="rail-prog" id="railProg"></span>
+    <a class="back" href="/case-studies">← All case studies</a>
+    <div class="brandmark">Ajinkya<span>.</span></div>
+    <div class="railsub">ORRA · Paid Acquisition<br>Case Study</div>
+    <a href="#top" data-t="top" class="on"><span class="dot"></span><span class="num">00</span>Overview</a>
+    <a href="#brief" data-t="brief"><span class="dot"></span><span class="num">01</span>Brief &amp; challenge</a>
+    <a href="#strategy" data-t="strategy"><span class="dot"></span><span class="num">02</span>Strategy</a>
+    <a href="#funnel" data-t="funnel"><span class="dot"></span><span class="num">03</span>Funnel</a>
+    <a href="#google" data-t="google"><span class="dot"></span><span class="num">04</span>Google Ads</a>
+    <a href="#meta" data-t="meta"><span class="dot"></span><span class="num">05</span>Meta Ads</a>
+    <a href="#landing" data-t="landing"><span class="dot"></span><span class="num">06</span>Landing page</a>
+    <a href="#flow" data-t="flow"><span class="dot"></span><span class="num">07</span>Lead flow</a>
+    <a href="#kpis" data-t="kpis"><span class="dot"></span><span class="num">08</span>Measurement</a>
+    <a href="#diagnosis" data-t="diagnosis"><span class="dot"></span><span class="num">09</span>Diagnosis</a>
+  </nav>
+
+  <!-- ============ MAIN ============ -->
+  <main>
+    <a class="back-m" href="/case-studies">← All case studies</a>
+
+    <!-- HERO -->
+    <header class="hero" id="top">
+      <div class="kick">Proposed Strategy · Google &amp; Meta · ORRA (concept brand)</div>
+      <h1 class="vskew"><span class="ln"><span>Selling a €30,000</span></span><span class="ln"><span>motorcycle <em>nobody</em></span></span><span class="ln"><span><em>has heard of.</em></span></span></h1>
+      <p class="subh">From search click to private test ride.</p>
+      <p class="stand">A complete paid acquisition strategy and campaign system for ORRA, a premium electric motorcycle brand. It covers channel strategy and funnel architecture, Google Search, Meta creative, landing-page design, tracking and optimisation logic.</p>
+      <div class="hero-cta">
+        <a class="hbtn" href="/paid-ads/electric-motorcycle" target="_blank" rel="noopener">Open the live landing page ↗</a>
+        <a class="hbtn ghost" href="#landing">See how it was built ↓</a>
+      </div>
+      <div class="hstats">
+        <div class="hs"><b data-n="30000" data-pre="€">€30,000</b><i>Price of one machine</i></div>
+        <div class="hs"><b data-n="10000" data-pre="€">€10,000</b><i>Media budget, per month</i></div>
+        <div class="hs"><b data-n="4">4</b><i>Markets · DE FR BE NL</i></div>
+        <div class="hs"><b data-n="90">90</b><i>Days to prove it</i></div>
+      </div>
+      <div class="hmeta">Speculative case study<span>·</span>No live spend<span>·</span>No results claimed</div>
+    </header>
+
+    <!-- BRIEF & CHALLENGE -->
+    <section id="brief">
+      <div class="rv">
+        <div class="eyebrow">01 · The Brief</div>
+        <h2 class="sec">Quality over volume, by design.</h2>
+        <p class="sec-lede">A Google Ads and Meta Ads take-home assignment, extended into a full portfolio project. I created the brand (ORRA), the creatives and the landing page to show how the whole system would work together.</p>
+      </div>
+      <div class="agrid rv">
+        <div class="acell"><div class="k">Product</div><div class="v"><b>€30,000+ hand-built electric motorcycle.</b> Premium, low-volume, built to order.</div></div>
+        <div class="acell"><div class="k">Markets</div><div class="v">Western Europe. <b>Germany, France, Belgium, Netherlands</b> as priority markets.</div></div>
+        <div class="acell"><div class="k">Media budget</div><div class="v"><b>€10,000 per month</b>, media spend only.</div></div>
+        <div class="acell"><div class="k">Primary goal</div><div class="v"><b>Qualified test rides</b> and serious buyer and dealer enquiries.</div></div>
+        <div class="acell"><div class="k">Secondary goal</div><div class="v">Build an audience and email database for a <b>3–6 month</b> consideration cycle.</div></div>
+        <div class="acell"><div class="k">Not the goal</div><div class="v">Maximum lead volume. A full inbox of unqualified form fills is a cost, not a win.</div></div>
+      </div>
+
+      <h3 class="sub rv">The challenge</h3>
+      <div class="challenge rv">
+        <div class="ch"><span>01</span><b>High price</b><p>€30,000+ is a considered purchase. Nobody books after one ad.</p></div>
+        <div class="ch"><span>02</span><b>Low purchase frequency</b><p>Customers buy once in years, so there is no repeat-purchase data to lean on.</p></div>
+        <div class="ch"><span>03</span><b>3–6 month sales cycle</b><p>The sale closes offline, long after the click. Platforms can't see it.</p></div>
+        <div class="ch"><span>04</span><b>Limited sales capacity</b><p>The team can work ~5–10 qualified leads a week. Volume beyond that is waste.</p></div>
+        <div class="ch"><span>05</span><b>Low awareness</b><p>A new brand. Few people search for it by name yet.</p></div>
+        <div class="ch"><span>06</span><b>Lead quality &gt; lead volume</b><p>One serious buyer is worth more than fifty curious clicks.</p></div>
+      </div>
+
+      <div class="thesis rv" style="margin-top:26px">
+        <p><b>Not a volume account.</b> The goal is the lowest steady cost of a qualified opportunity the sales team can actually work. The online funnel ends in a booked test ride; the sale happens offline, months later.</p>
+      </div>
+      <h3 class="sub rv">Assumptions the plan is built on</h3>
+      <div class="agrid rv">
+        <div class="acell"><div class="k">Tracking</div><div class="v">GA4, Meta Pixel + Conversions API and Google tags in place; the booking form is a tracked event.</div></div>
+        <div class="acell"><div class="k">CRM</div><div class="v">Records <b>Lead → Qualified → Test Ride → Opportunity → Sale</b>, and pushes offline conversions back to the platforms.</div></div>
+        <div class="acell"><div class="k">Sales capacity</div><div class="v"><b>~5–10 qualified leads/week</b>, so volume is capped at ~20–40 qualified leads/month by design.</div></div>
+        <div class="acell"><div class="k">Sales cycle</div><div class="v">3–6 months; few sales close inside 90 days. Q1 is judged on leading indicators.</div></div>
+      </div>
+      <p class="footnote rv">Every target on this page is an <b>initial planning target</b> to validate in month 1, not an industry benchmark and not a result. Research: Google Keyword Planner, Google Trends.</p>
+    </section>
+
+    <!-- STRATEGY -->
+    <section id="strategy">
+      <div class="pin" id="pinBudget"><div class="pin-in">
+      <div class="rv">
+        <div class="eyebrow">02 · Strategy &amp; Budget <span class="tag">Proposed strategy</span></div>
+        <h2 class="sec">Where the €10,000 goes.</h2>
+        <p class="sec-lede">Google captures the demand that already exists. Meta creates it, nurtures it, and builds the audiences the account will optimise against.</p>
+      </div>
+      <div class="budget rv">
+        <div class="btrack" id="btrack">
+          <div class="bseg g" data-w="60"><div class="bn">€6,000</div><div class="bl">Google · 60%</div></div>
+          <div class="bseg m" data-w="40"><div class="bn">€4,000</div><div class="bl">Meta · 40%</div></div>
+        </div>
+        <div class="brole">
+          <div class="r"><div class="rt">Google Ads: capture</div><div class="rd">Reach people already searching for an electric motorcycle. The highest-intent, best-value traffic to start with.</div></div>
+          <div class="r"><div class="rt">Meta Ads: create &amp; nurture</div><div class="rd">Build demand, grow an email and retargeting audience, and warm buyers through a long consideration window.</div></div>
+        </div>
+        <p class="footnote">A starting hypothesis, not a fixed rule. The split moves as qualified-lead data shows which channel actually feeds the pipeline.</p>
+      </div>
+      </div></div>
+
+      <h3 class="sub rv">The system, end to end</h3>
+      <div class="sys rv">
+        <div class="node root"><span class="nk">Budget</span><b>€10K media</b><i>per month</i></div>
+        <div class="sarw">→</div>
+        <div class="split2">
+          <div class="node g"><span class="nk">Google · €6K</span><b>Capture</b><i>existing demand</i></div>
+          <div class="node m"><span class="nk">Meta · €4K</span><b>Create + nurture</b><i>new demand</i></div>
+        </div>
+        <div class="sarw">→</div>
+        <div class="node lp"><span class="nk">Landing page</span><b>Educate + qualify</b><i>one goal: the test ride</i></div>
+        <div class="sarw">→</div>
+        <div class="node crm"><span class="nk">CRM</span><b>Lead → Qualified → Test ride → Opportunity → Sale</b></div>
+      </div>
+
+      <h3 class="sub rv">The 90-day plan</h3>
+      <div class="plan rv">
+        <div class="phase">
+          <div class="ph">Month 1: Validate</div>
+          <ul>
+            <li>Make tracking and conversion definitions trustworthy end to end.</li>
+            <li>Read real search demand and search-term quality in the two lead markets.</li>
+            <li>Test audiences, creative and message fit.</li>
+            <li>Measure landing-page conversion; agree with sales what a qualified lead is.</li>
+            <li>Keep scale low while the data settles.</li>
+          </ul>
+        </div>
+        <div class="phase">
+          <div class="ph">Months 2–3: Concentrate &amp; scale</div>
+          <ul>
+            <li>Switch on the remaining markets once cost per qualified lead is readable.</li>
+            <li>Shift budget to the patterns producing qualified leads.</li>
+            <li>Refine Meta audiences and creative; retire tired ads.</li>
+            <li>Once Search and conversion data are solid, test Demand Gen.</li>
+            <li>Feed qualified-lead and offline data back; scale where quality holds.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNNEL -->
+    <section id="funnel">
+      <div class="rv">
+        <div class="eyebrow">03 · Funnel Architecture</div>
+        <h2 class="sec">Built for the sale, not the form fill.</h2>
+        <p class="sec-lede">Each stage has its own job, channel and creative. The funnel deliberately continues past the website, because that's where the money is made.</p>
+      </div>
+      <div class="funnel rv">
+        <div class="fs" style="--w:100%"><span class="fst">TOFU</span><b>Awareness</b><i>Meta product story · cold + lookalike audiences</i></div>
+        <div class="fs" style="--w:88%"><span class="fst">MOFU</span><b>Consideration</b><i>Engineering, range &amp; design content · email opt-in · retargeting pools</i></div>
+        <div class="fs" style="--w:76%"><span class="fst">BOFU</span><b>Test ride / enquiry</b><i>Google Search · Meta retargeting · landing-page form</i></div>
+        <div class="fdiv"><span>Online ↑ · Offline ↓</span></div>
+        <div class="fs off" style="--w:64%"><span class="fst">Offline</span><b>Test ride</b><i>Sales team · dealer or private session</i></div>
+        <div class="fs off" style="--w:52%"><span class="fst">CRM</span><b>Opportunity</b><i>Qualified, priced, in negotiation</i></div>
+        <div class="fs off gold" style="--w:40%"><span class="fst">€</span><b>Sale</b><i>3–6 months after the first click</i></div>
+      </div>
+      <div class="thesis rv" style="margin-top:22px">
+        <p><b>Deliberately not optimised for lead volume.</b> If the platforms only see form fills, they learn to find people who fill in forms. The account is built to feed qualified-lead signals back from the CRM, so the algorithms learn to find buyers.</p>
+      </div>
+    </section>
+
+    <!-- GOOGLE -->
+    <section id="google">
+      <div class="rv">
+        <div class="eyebrow">04 · Google Ads · €6,000/month <span class="tag">Proposed strategy</span></div>
+        <h2 class="sec">All budget on intent, first.</h2>
+        <p class="sec-lede">Search first: capture the people already looking for an electric motorcycle, then widen the net once conversion data is trustworthy.</p>
+      </div>
+
+      <h3 class="sub rv">Channel roadmap</h3>
+      <div class="chan rv">
+        <div class="cr"><b>Non-brand Search</b><span class="when now">Now</span><p>The primary capture engine: category, commercial, performance and competitor terms.</p></div>
+        <div class="cr"><b>Brand Search</b><span class="when now">Now</span><p>Isolated campaign. Cheap protection of our own name as awareness grows.</p></div>
+        <div class="cr"><b>Demand Gen / YouTube</b><span class="when">Month 3+</span><p>Once the performance film and retargeting pools exist. Builds demand Search can then capture.</p></div>
+        <div class="cr"><b>Performance Max</b><span class="when">Later</span><p>Only after offline qualified-lead conversions feed back. Before that, it optimises toward cheap form fills.</p></div>
+        <div class="cr"><b>Shopping</b><span class="when no">Not prioritised</span><p>No online checkout. Nobody buys a €30,000 motorcycle from a product feed.</p></div>
+      </div>
+
+      <div class="callout-note rv">
+        <div class="cn-k">The budget reality</div>
+        <p>€6,000 across four markets and three languages is thin. Split evenly, every campaign gets about €1,500 a month, which is too little data for any of them to learn. So <b>month 1 runs non-brand Search in Germany and the Netherlands only</b>, plus brand everywhere. Belgium and France switch on in month 2, once cost per qualified lead is readable.</p>
+      </div>
+
+      <h3 class="sub rv">Bidding, in plain terms</h3>
+      <div class="agrid rv">
+        <div class="acell"><div class="k">Non-brand: Maximize Conversions</div><div class="v">Start by optimising for <b>leads</b> (test-ride enquiries). They happen often enough to give Google a signal to learn from. As the CRM fills, move to qualified leads.</div></div>
+        <div class="acell"><div class="k">Target CPA: later</div><div class="v">Once qualified-lead data is reliable, test Target CPA to hold a cost per lead. <b>No rigid conversion-count rule</b>; we move when the data is trustworthy.</div></div>
+        <div class="acell"><div class="k">Brand Search: separate</div><div class="v">Kept apart from non-brand, so cheap brand clicks never flatter non-brand performance.</div></div>
+        <div class="acell"><div class="k">Structure principle</div><div class="v"><b>One campaign per market and language</b> keeps budget, language and performance separate.</div></div>
+      </div>
+
+      <h3 class="sub rv">Search account structure</h3>
+      <div class="tree rv">
+        <div class="camp">
+          <div class="ch"><div class="cn"><i>1</i>Brand Search</div><div class="tag">All markets · now</div></div>
+          <div class="ags"><span class="ag">ORRA · ORRA ONE · ORRA motorcycle</span></div>
+        </div>
+        <div class="camp">
+          <div class="ch"><div class="cn"><i>2</i>Germany · DE</div><div class="tag">Month 1</div></div>
+          <div class="ags"><span class="ag">Electric Motorcycle</span><span class="ag">Test Ride</span><span class="ag">Buy / Price</span><span class="ag">Performance</span><span class="ag">Competitor</span></div>
+        </div>
+        <div class="camp">
+          <div class="ch"><div class="cn"><i>3</i>Netherlands · NL</div><div class="tag">Month 1</div></div>
+          <div class="ags"><span class="ag">Electric Motorcycle</span><span class="ag">Test Ride</span><span class="ag">Buy / Price</span><span class="ag">Performance</span><span class="ag">Competitor</span></div>
+        </div>
+        <div class="camp">
+          <div class="ch"><div class="cn"><i>4</i>Belgium · NL + FR</div><div class="tag mut">Month 2 · split by language</div></div>
+          <div class="ags"><span class="ag">Electric Motorcycle</span><span class="ag">Test Ride</span><span class="ag">Buy / Price</span><span class="ag">Competitor</span></div>
+        </div>
+        <div class="camp">
+          <div class="ch"><div class="cn"><i>5</i>France · FR</div><div class="tag mut">Month 2</div></div>
+          <div class="ags"><span class="ag">Electric Motorcycle</span><span class="ag">Test Ride</span><span class="ag">Buy / Price</span><span class="ag">Competitor</span></div>
+        </div>
+      </div>
+
+      <h3 class="sub rv">Sample keyword groups</h3>
+      <div class="kwgroups rv">
+        <div class="kg"><div class="kh">Category</div><ul><li>electric motorcycle</li><li>premium electric motorcycle</li></ul></div>
+        <div class="kg"><div class="kh">Commercial</div><ul><li>electric motorcycle test ride</li><li>electric motorbike for sale</li></ul></div>
+        <div class="kg"><div class="kh">Performance</div><ul><li>high performance electric motorcycle</li><li>long range electric motorcycle</li></ul></div>
+        <div class="kg"><div class="kh">Competitor</div><ul><li>LiveWire</li><li>Verge</li><li>Zero Motorcycles</li><li>Energica <sup>†</sup></li></ul></div>
+      </div>
+      <p class="footnote rv">† Energica went into insolvency in late 2024, so its search demand is shrinking and may draw used-bike and spare-parts traffic. I'd keep it only while search terms show buyers, with tight negatives. English shown for readability; each market runs native-language equivalents (below).</p>
+
+      <h3 class="sub rv">Localisation</h3>
+      <p class="body rv">Real buyers search in their own language, so each market runs native-language keywords and ads. Search volumes aren't invented here; every term gets validated in Google Keyword Planner before launch.</p>
+      <div class="tabs rv" id="mkttabs">
+        <button class="tab on" data-m="de">Germany</button>
+        <button class="tab" data-m="nl">Netherlands</button>
+        <button class="tab" data-m="be">Belgium</button>
+        <button class="tab" data-m="fr">France</button>
+      </div>
+      <div class="mkt on" data-m="de"><div class="kwgrid">
+        <div class="kwc"><div class="kh">Electric motorcycle</div><div class="kv">elektromotorrad</div></div>
+        <div class="kwc"><div class="kh">Test ride</div><div class="kv">elektromotorrad probefahrt</div></div>
+        <div class="kwc"><div class="kh">Buy / price</div><div class="kv">elektromotorrad kaufen</div><div class="kv2">· preis</div></div>
+      </div></div>
+      <div class="mkt" data-m="nl"><div class="kwgrid">
+        <div class="kwc"><div class="kh">Electric motorcycle</div><div class="kv">elektrische motorfiets</div></div>
+        <div class="kwc"><div class="kh">Test ride</div><div class="kv">elektrische motor proefrit</div></div>
+        <div class="kwc"><div class="kh">Buy / price</div><div class="kv">elektrische motor kopen</div><div class="kv2">· prijs</div></div>
+      </div></div>
+      <div class="mkt" data-m="be"><div class="kwgrid">
+        <div class="kwc"><div class="kh">Electric motorcycle</div><div class="kv">elektrische motorfiets</div><div class="kv2">moto électrique</div></div>
+        <div class="kwc"><div class="kh">Test ride</div><div class="kv">proefrit</div><div class="kv2">essai moto électrique</div></div>
+        <div class="kwc"><div class="kh">Buy / price</div><div class="kv">kopen</div><div class="kv2">acheter moto électrique</div></div>
+      </div></div>
+      <div class="mkt" data-m="fr"><div class="kwgrid">
+        <div class="kwc"><div class="kh">Electric motorcycle</div><div class="kv">moto électrique</div></div>
+        <div class="kwc"><div class="kh">Test ride</div><div class="kv">essai moto électrique</div></div>
+        <div class="kwc"><div class="kh">Buy / price</div><div class="kv">acheter moto électrique</div><div class="kv2">· prix</div></div>
+      </div></div>
+      <div class="agrid rv" style="margin-top:16px">
+        <div class="acell"><div class="k">Landing pages</div><div class="v"><b>/de, /fr and /nl variants</b> of the landing page, one per language. Belgian traffic gets NL or FR based on the campaign's language targeting.</div></div>
+        <div class="acell"><div class="k">Message match</div><div class="v">Search campaigns are split by language, so <b>keyword, ad and landing page always speak the same language</b>. The concept page below is built in English; the variants are specified, not built.</div></div>
+      </div>
+
+      <h3 class="sub rv">Negative keywords</h3>
+      <div class="negs rv">
+        <span class="neg"><b>cheap</b> · wrong buyer for €30,000</span>
+        <span class="neg"><b>used · second hand</b> · we sell new</span>
+        <span class="neg"><b>moped · scooter · 50cc</b> · low-value category</span>
+        <span class="neg"><b>e-bike · bicycle</b> · pedal, not motorcycle</span>
+        <span class="neg"><b>kit · conversion</b> · DIY, not buying</span>
+        <span class="neg"><b>rental · hire · jobs</b> · no intent to buy</span>
+        <span class="neg"><b>parts · battery replacement</b> · aftermarket, not purchase</span>
+      </div>
+
+      <h3 class="sub rv">Responsive search ad</h3>
+      <p class="body rv">Google tests the best combinations of headlines and descriptions per search. Three angles: performance, premium positioning and the test ride. The landing page's first call to action repeats the ad's offer word for word.</p>
+      <div class="serp rv">
+        <div class="sp-top"><span class="sp-ad">Sponsored</span><span class="sp-url">orra.example · test-ride</span></div>
+        <div class="sp-h">ORRA ONE Electric Motorcycle | Book a Private Test Ride</div>
+        <div class="sp-d">Hand-built electric motorcycle from €30,000. Instant torque, 180 km range. Book a private test ride in Germany, Belgium, the Netherlands or France.</div>
+      </div>
+      <div class="compare rv" style="grid-template-columns:1fr 1fr;margin-top:12px">
+        <div class="cc hd">Headlines (≤30 characters)</div><div class="cc hd">Descriptions (≤90 characters)</div>
+        <div class="cc">ORRA ONE Electric Motorcycle<br>Book a Private Test Ride<br>Electric Performance, By Hand<br>0–100 km/h in 3.5 Seconds<br>From €30,000, Built to Order<br>Ride It Before You Decide</div>
+        <div class="cc">Hand-built electric motorcycle from €30,000. Instant torque, 180 km range.<br><br>Book a private test ride in Germany, Belgium, the Netherlands or France.<br><br>Not a scooter with a badge. A performance machine, built to order.</div>
+      </div>
+    </section>
+
+    <!-- META -->
+    <section id="meta">
+      <div class="rv">
+        <div class="eyebrow">05 · Meta Ads · €4,000/month <span class="tag">Proposed strategy</span></div>
+        <h2 class="sec">Create the demand Google captures.</h2>
+        <p class="sec-lede">Two campaigns at launch, prospecting and retargeting, so each gathers enough data to optimise instead of splintering into thin ad sets.</p>
+      </div>
+      <div class="cards3 rv">
+        <div class="fcard">
+          <div class="stage">Prospecting</div><div class="obj">TOFU → MOFU · video views, landing-page views, email opt-in</div>
+          <div class="aud">Interest &amp; behaviour stack plus 1–3% lookalikes of site visitors and leads. The product story first, then engineering, range and design.</div>
+          <div class="bud">€3,000<span>/ mo</span></div>
+        </div>
+        <div class="fcard">
+          <div class="stage">Retargeting</div><div class="obj">BOFU · leads (test-ride form)</div>
+          <div class="aud">Site visitors (30–60d), 50%+ video viewers, form abandoners. One message: book the ride.</div>
+          <div class="bud">€1,000<span>/ mo</span></div>
+        </div>
+        <div class="fcard">
+          <div class="stage">Excluded everywhere</div><div class="obj">Protects the budget</div>
+          <div class="aud">Existing leads, test-ride bookers and owners, synced from the CRM. Spend never chases people already in the pipeline.</div>
+          <div class="bud">€0<span>wasted</span></div>
+        </div>
+      </div>
+      <div class="flowline rv">
+        <span class="fl"><b>Budget flow</b> <span class="tag">Initial planning target</span></span>
+        <span class="fl">launch <b>75 / 25</b> prospecting / retargeting to fill the warm pool</span>
+        <span class="arw">→</span>
+        <span class="fl">shift toward <b>60 / 40</b> by month 3 as the pool grows</span>
+      </div>
+
+      <h3 class="sub rv">Three creatives, one per funnel stage <span class="tag">Speculative creative</span></h3>
+      <p class="body rv">Each creative has a single job. None of them ran with paid spend; they show the creative direction and how each one maps to a stage of the funnel.</p>
+      <div class="adshow rv" id="adshow">
+        <figure class="adc" data-tilt="-1">
+          <div class="phone"><img src="/assets/orra/creative-tofu-product.jpg" alt="Meta story ad: ORRA ONE side profile, headline Electric. Re-engineered., call to action Discover ORRA ONE" loading="lazy" width="720" height="1280"></div>
+          <figcaption><span class="st">TOFU / Product</span><span class="nm serif">Electric. <em>Re-engineered.</em></span><span class="ds">The introduction. Shows cold audiences what ORRA is, with three numbers and no ask beyond "discover".</span></figcaption>
+        </figure>
+        <figure class="adc" data-tilt="0">
+          <div class="phone"><img src="/assets/orra/creative-mofu-engineering.jpg" alt="Meta story ad: exploded electric powertrain, headline Built Differently" loading="lazy" width="720" height="1280"></div>
+          <figcaption><span class="st">MOFU / Engineering</span><span class="nm serif">Built <em>differently</em></span><span class="ds">For people who've engaged once. Answers "is it a serious machine?" before they visit.</span></figcaption>
+        </figure>
+        <figure class="adc" data-tilt="1">
+          <div class="phone"><img src="/assets/orra/creative-bofu-performance.jpg" alt="Meta story ad: rider's-eye dashboard, headline 0–100 km/h in 3.5 seconds, call to action Book a test ride" loading="lazy" width="720" height="1279"></div>
+          <figcaption><span class="st">BOFU / Performance</span><span class="nm serif">0–100 in <em>3.5 seconds</em></span><span class="ds">Retargeting. One unforgettable number, then one action: book the test ride.</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="revnote rv">
+        <img src="/assets/orra/creative-mofu-engineering-v1.jpg" alt="Version 1 of the engineering creative, showing a combustion engine" loading="lazy" width="720" height="1279">
+        <div>
+          <div class="cn-k">Creative QA · why the engineering ad has a v2</div>
+          <p>The first render (left) looked premium but showed a <b>combustion engine</b>, with exhaust headers and cylinder heads. On an electric motorcycle ad that's the one mistake an enthusiast spots instantly. It also claimed "lower emissions", a vague green claim that EU consumer rules increasingly target. v2 replaces it with an electric axial-flux powertrain and the specific, factual <b>"zero tailpipe emissions"</b>.</p>
+        </div>
+      </div>
+
+      <p class="body rv" style="margin-top:22px">Ad copy, side by side:</p>
+      <div class="compare c3 rv">
+        <div class="cc lbl"></div><div class="cc hd">TOFU · Product</div><div class="cc hd">MOFU · Engineering</div><div class="cc hd">BOFU · Performance</div>
+        <div class="cc lbl">Primary text</div>
+        <div class="cc">Hand-built. Electric. Re-engineered. Meet ORRA ONE, a performance motorcycle from €30,000.</div>
+        <div class="cc">An axial-flux motor, a single-speed final drive and an aluminium chassis finished by hand. Electric, built like a performance motorcycle.</div>
+        <div class="cc">0–100 km/h in 3.5 seconds. No clutch, no gears, no wait. Feel it for yourself: book a private test ride near you.</div>
+        <div class="cc lbl">Headline</div>
+        <div class="cc"><b>Electric. Re-engineered.</b></div>
+        <div class="cc"><b>Built differently</b></div>
+        <div class="cc"><b>Instant torque. Book a test ride.</b></div>
+        <div class="cc lbl">CTA</div>
+        <div class="cc"><b>Learn More</b></div>
+        <div class="cc"><b>Learn More</b></div>
+        <div class="cc"><b>Book Now</b></div>
+        <div class="cc lbl">Optimises for</div>
+        <div class="cc">ThruPlay / reach</div>
+        <div class="cc">Landing-page views, email opt-in</div>
+        <div class="cc">Leads (test-ride form)</div>
+      </div>
+    </section>
+
+    <!-- LANDING PAGE -->
+    <section id="landing">
+      <div class="rv">
+        <div class="eyebrow">06 · The Landing Page</div>
+        <h2 class="sec">One page, one job: the test ride.</h2>
+        <p class="sec-lede">Every Google click lands on a page built as ORRA's own site, not as part of this portfolio. It's live and fully interactive. Click into the laptop to scroll it, or open it full-size.</p>
+      </div>
+      <div class="devices rv" id="devices">
+        <div class="laptop">
+          <div class="lid"><div class="screen" data-w="1440" data-h="900">
+            <iframe src="/paid-ads/electric-motorcycle" title="ORRA landing page, desktop" loading="lazy" tabindex="-1"></iframe>
+            <button class="shield" type="button" aria-label="Interact with the desktop landing page preview"><span>Click to explore</span></button>
+          </div></div>
+          <div class="base"></div>
+        </div>
+        <div class="handset">
+          <div class="screen" data-w="390" data-h="844">
+            <iframe src="/paid-ads/electric-motorcycle" title="ORRA landing page, mobile" loading="lazy" tabindex="-1"></iframe>
+            <button class="shield" type="button" aria-label="Interact with the mobile landing page preview"><span>Tap to explore</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="dev-cta rv">
+        <a class="hbtn" href="/paid-ads/electric-motorcycle" target="_blank" rel="noopener">Open live landing page →</a>
+        <span class="devnote">Desktop and mobile shown side by side because most Search clicks for this category arrive on a phone.</span>
+      </div>
+
+      <h3 class="sub rv">Built to qualify, not just convert</h3>
+      <div class="decisions rv">
+        <div class="dc"><span>01</span><b>Message match</b><p>The hero CTA repeats the ad's offer, "Book a private test ride", so the click feels like a continuation, not a new page.</p></div>
+        <div class="dc"><span>02</span><b>Two-step form</b><p>Step 1 asks four things: name, email, country, timeframe. Everything else is optional. Fewer drop-offs from cold search traffic.</p></div>
+        <div class="dc"><span>03</span><b>Timeframe as a qualifier</b><p>"Within 3 months" vs "just exploring" lets the CRM score and route the lead before sales ever calls.</p></div>
+        <div class="dc"><span>04</span><b>Dealers routed separately</b><p>Dealers get their own link and form. A dealer and a private buyer are different conversations with different owners.</p></div>
+        <div class="dc"><span>05</span><b>Objections on the page</b><p>Range and charging get their own section and FAQ, the first doubt any electric motorcycle buyer has.</p></div>
+        <div class="dc"><span>06</span><b>Mobile first</b><p>A sticky "Book a test ride" bar appears after the hero on phones and hides when the form is on screen.</p></div>
+        <div class="dc"><span>07</span><b>Specs in one place</b><p>All product figures live in a single config, so concept specs can be swapped for homologated ones without touching the layout.</p></div>
+        <div class="dc"><span>08</span><b>Honest by default</b><p>The page is <code>noindex</code>, labelled as a concept, and the forms post nowhere. No real person's data is ever collected.</p></div>
+      </div>
+    </section>
+
+    <!-- FLOW -->
+    <section id="flow">
+      <div class="rv">
+        <div class="eyebrow">07 · Lead Flow &amp; Attribution</div>
+        <h2 class="sec">Minutes online. Months offline.</h2>
+        <p class="sec-lede">The ad platforms only see the first few minutes. The sale happens months later, in the CRM. The account works when the second part is fed back to the first.</p>
+      </div>
+
+      <div class="journey rv">
+        <div class="jcard">
+          <div class="jn">01 · The click</div>
+          <div class="jt serif">≈ 3 minutes</div>
+          <div class="jw">Seen by Google &amp; Meta</div>
+          <ol class="jsteps">
+            <li>Ad click</li>
+            <li>Landing page</li>
+            <li>Two-step form</li>
+            <li class="hi">Lead: test ride requested</li>
+          </ol>
+        </div>
+        <div class="jarr" aria-hidden="true">→</div>
+        <div class="jcard">
+          <div class="jn">02 · The sale</div>
+          <div class="jt serif">3–6 months</div>
+          <div class="jw">Seen only by the CRM</div>
+          <ol class="jsteps">
+            <li>Sales review <i>day 1–2</i></li>
+            <li class="hi">Qualified lead <i>week 1</i></li>
+            <li>Test ride <i>weeks 2–4</i></li>
+            <li>Opportunity <i>months 1–3</i></li>
+            <li class="gold">Sale <i>months 3–6</i></li>
+          </ol>
+        </div>
+        <div class="jarr" aria-hidden="true">→</div>
+        <div class="jcard fb">
+          <div class="jn">03 · The feedback</div>
+          <div class="jt serif">Offline conversions</div>
+          <div class="jw">Sent back to Google &amp; Meta</div>
+          <p>When sales marks a lead as qualified, or a sale closes, the CRM uploads that event to the ad platforms. Bidding then learns to find buyers, not form-fillers.</p>
+        </div>
+        <div class="jloop" aria-hidden="true"><span>↺ Step 03 makes step 01 smarter</span></div>
+      </div>
+
+      <p class="body rv" style="margin-top:22px">Qualified leads are rare at first, so the campaigns optimise toward leads to begin with, then switch to qualified leads once the CRM has enough data.</p>
+    </section>
+
+    <!-- MEASUREMENT -->
+    <section id="kpis">
+      <div class="rv">
+        <div class="eyebrow">08 · Measurement</div>
+        <h2 class="sec">What I would measure.</h2>
+        <p class="sec-lede">No campaign results are claimed here. This is the measurement system I'd put in place, and the number I'd manage the account to.</p>
+      </div>
+      <div class="chain rv">
+        <span>Lead</span><i>→</i><span>Qualified lead</span><i>→</i><span>Test ride</span><i>→</i><span class="hi">Opportunity</span><i>→</i><span>Sale</span>
+      </div>
+      <div class="primary rv">
+        <div class="pk">Primary optimisation metric</div>
+        <div class="pv serif">Cost per qualified <em>opportunity</em></div>
+        <p>It's the earliest number that reflects revenue rather than activity. CPL can look great while sales drowns in tyre-kickers; this metric can't.</p>
+      </div>
+      <div class="supp rv">
+        <span class="sk">Supporting metrics</span>
+        <span class="neg">Qualified lead rate</span><span class="neg">Test ride rate</span><span class="neg">CPL</span><span class="neg">Cost per qualified lead</span><span class="neg">Opportunity rate</span><span class="neg">CAC</span><span class="neg">Revenue / ROAS <i>(later)</i></span>
+      </div>
+      <div class="thesis rv" style="margin-top:22px;border-left-color:#d98a7a">
+        <p style="font-size:17px"><b style="color:#d98a7a">For the first 60 days, I would deliberately deprioritise ROAS,</b> because the commercial conversion happens offline and the sales cycle is 3–6 months. Early ROAS is zero or noise. Manage to cost per qualified lead and test-ride bookings; bring ROAS and CAC in once real sales data exists.</p>
+      </div>
+
+      <h3 class="sub rv">KPIs by funnel stage <span class="tag">Initial planning target</span></h3>
+      <div class="tblwrap rv">
+        <table class="tbl">
+          <thead><tr><th>Stage</th><th>Primary KPI</th><th>Initial planning target</th></tr></thead>
+          <tbody>
+            <tr><td><b>Awareness (TOFU)</b></td><td>ThruPlay rate; CPM</td><td class="em">≥15% ThruPlay · CPM €8–14</td></tr>
+            <tr><td><b>Traffic</b></td><td>Outbound CTR; cost / LP view</td><td class="em">≥0.9% · €0.60–1.50</td></tr>
+            <tr><td><b>Consideration (MOFU)</b></td><td>Cost per email opt-in; pool size</td><td class="em">€8–20 · growing pool</td></tr>
+            <tr><td><b>Lead (BOFU)</b></td><td>Test-ride form CVR; CPL</td><td class="em">3–6% · CPL €40–90</td></tr>
+            <tr><td><b>Qualified lead</b></td><td>Qualified-lead rate; cost / QL</td><td class="em">≥40% · €120–250</td></tr>
+            <tr><td><b>Commercial (offline)</b></td><td>Test-ride→opp; opp→sale; CAC</td><td>Tracked, not optimised, in Q1</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="footnote rv">Targets are planning assumptions to validate in month 1, not benchmarks and not results.</p>
+    </section>
+
+    <!-- DIAGNOSIS -->
+    <section id="diagnosis">
+      <div class="rv">
+        <div class="eyebrow">09 · Diagnosis <span class="tag">Assignment scenario</span></div>
+        <h2 class="sec">Three weeks in, something's wrong.</h2>
+      </div>
+      <div class="scenario rv">
+        <div class="sh">The scenario · hypothetical figures from the brief</div>
+        <p>The ads are getting clicks (<b>CTR 2.8%</b>) and plenty of traffic, but almost no one finishes the test-ride form (<b>0.2%</b>), cost per lead is about <b>4× target</b>, and the few leads are low quality. The clicks are fine; something is going wrong <b>after</b> the click. I'd check in this order, quickest first.</p>
+      </div>
+      <div class="checks rv">
+        <div class="check"><div class="ck">Tracking</div><div class="cv">Check this first. A 0.2% rate is often a broken or double-counted form event, not a real one.</div></div>
+        <div class="check"><div class="ck">Form / landing page</div><div class="cv">Is the page slow, hard to use on a phone, or is the form too long? The most common real cause, and the reason the landing page above uses a two-step form.</div></div>
+        <div class="check"><div class="ck">Traffic quality</div><div class="cv">Are clicks coming from the right searches, or cheap, curious clicks that were never going to buy?</div></div>
+        <div class="check"><div class="ck">Message match</div><div class="cv">Does the landing page deliver what the ad promised, or is there a gap that loses people?</div></div>
+        <div class="check"><div class="ck">Lead quality</div><div class="cv">What does sales say: real people but the wrong profile, or the offer attracting the wrong person?</div></div>
+      </div>
+      <div class="actions rv">
+        <div class="act"><div class="an">01</div><div class="at">Fix tracking &amp; the form first.</div><div class="ad">Confirm conversions record correctly, then remove anything that makes the form hard to complete. Fastest fix, costs nothing.</div></div>
+        <div class="act"><div class="an">02</div><div class="at">Move budget toward quality, not cheaper CPL.</div><div class="ad">Spend where leads actually turn into qualified opportunities, even if those leads cost a little more.</div></div>
+        <div class="act"><div class="an">03</div><div class="at">Test clearer price &amp; test-ride messaging.</div><div class="ad">Leading with price and the test ride attracts the right buyer and filters out the wrong one.</div></div>
+      </div>
+      <div class="timing rv">
+        <b>How long to wait:</b> tracking and form fixes show within a few days; budget and ad changes need about two to three weeks to read; whether leads become sales takes the full 3–6 month cycle. Quick fixes get quick decisions; quality takes patience.
+      </div>
+    </section>
+
+    <footer>
+      <div class="fnote">ORRA is a fictional brand, and this is a speculative case study built from a take-home assignment brief. No media was spent and no campaign results are claimed. Product specifications are concept values; creatives are speculative. All figures are planning assumptions to validate, not external benchmarks.</div>
+      <div class="disc">Paid Acquisition Strategy · DE · FR · BE · NL · Ajinkya Bagade</div>
+      <div class="fnav"><a href="/case-studies">← All case studies</a><a href="/paid-ads/electric-motorcycle" target="_blank" rel="noopener">Landing page ↗</a><a href="/">Portfolio home</a></div>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // reveal on scroll
+  var rvs = document.querySelectorAll('.rv');
+  if(reduce){ rvs.forEach(function(el){el.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+  }
+
+  // budget bar animate
+  var bt = document.getElementById('btrack');
+  function fillBar(){ if(document.getElementById('pinBudget')) return; bt.querySelectorAll('.bseg').forEach(function(s){ s.style.width = s.getAttribute('data-w')+'%'; }); }
+  if(reduce){ fillBar(); }
+  else if(bt){
+    var bio = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ fillBar(); bio.disconnect(); } });
+    },{threshold:.4});
+    bio.observe(bt);
+  }
+
+  // market tabs
+  var tabs = document.querySelectorAll('#mkttabs .tab');
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      var m = t.getAttribute('data-m');
+      tabs.forEach(function(x){x.classList.remove('on');}); t.classList.add('on');
+      document.querySelectorAll('.mkt').forEach(function(p){ p.classList.toggle('on', p.getAttribute('data-m')===m); });
+    });
+  });
+
+  // scrollspy
+  var links = document.querySelectorAll('.rail a');
+  var map = {};
+  links.forEach(function(l){ map[l.getAttribute('data-t')] = l; });
+  var secs = document.querySelectorAll('section, header.hero');
+  var sio = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        var id = e.target.id;
+        links.forEach(function(l){l.classList.remove('on');});
+        if(map[id]) map[id].classList.add('on');
+      }
+    });
+  },{rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(function(s){sio.observe(s);});
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+  var RM=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* word-split section titles */
+  document.querySelectorAll('h2.sec').forEach(function(h){var words=h.textContent.trim().split(/\s+/);h.innerHTML=words.map(function(w,i){return '<span class="w"><span style="transition-delay:'+(i*.06)+'s">'+w+'</span></span>';}).join(' ');h.classList.add('vskew');});
+  /* table rows stagger */
+  document.querySelectorAll('.tbl tbody tr').forEach(function(r,i){r.style.transitionDelay=(Math.min(i,10)*.05)+'s';});
+  requestAnimationFrame(function(){setTimeout(function(){document.body.classList.add('ready');},60);});
+
+  /* smooth scroll */
+  var lenis=null,vel=0,dir=1;
+  if(window.Lenis&&!RM){lenis=new Lenis({lerp:.09,smoothWheel:true});lenis.on('scroll',function(e){vel=e.velocity||0;if(Math.abs(vel)>.2)dir=vel>0?1:-1;});
+    document.querySelectorAll('.rail a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();lenis.scrollTo(t,{offset:-10,duration:1.4});});});}
+  else{var ly=scrollY;addEventListener('scroll',function(){var d=scrollY-ly;ly=scrollY;vel=d;if(Math.abs(d)>.2)dir=d>0?1:-1;},{passive:true});}
+
+  /* count-ups on money figures */
+  function countIn(el){if(el.dataset.c)return;el.dataset.c=1;var m=el.childNodes[0]&&el.childNodes[0].nodeValue;if(!m)return;var mt=m.match(/^(\D*)([\d,]+)(.*)$/);if(!mt||RM)return;
+    var pre=mt[1],num=parseFloat(mt[2].replace(/,/g,'')),suf=mt[3],t0=performance.now();
+    (function f(t){var k=Math.min(1,(t-t0)/1400);k=1-Math.pow(1-k,3);el.childNodes[0].nodeValue=pre+Math.round(num*k).toLocaleString('en-US')+suf;if(k<1)requestAnimationFrame(f);})(t0);}
+  var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countIn(e.target);cio.unobserve(e.target);}});},{threshold:.5});
+  document.querySelectorAll('.fcard .bud').forEach(function(el){cio.observe(el);});
+
+
+  /* hero numbers roll up */
+  function roll(el,dur){var n=+el.dataset.n,pre=el.dataset.pre||'',t0=performance.now();if(RM)return;
+    (function f(t){var k=Math.min(1,(t-t0)/dur);k=1-Math.pow(1-k,4);el.textContent=pre+Math.round(n*k).toLocaleString('en-US');if(k<1)requestAnimationFrame(f);})(t0);}
+  setTimeout(function(){document.querySelectorAll('.hs b').forEach(function(b,i){roll(b,1600+i*150);});},900);
+
+  /* scrollytelling helpers */
+  var PIN=!RM&&innerWidth>900;
+  function pgs(el){var r=el.getBoundingClientRect(),span=el.offsetHeight-innerHeight;if(span<=0)return 1;return Math.max(0,Math.min(1,-r.top/span));}
+  var pb=document.getElementById('pinBudget'),segs=pb?pb.querySelectorAll('.bseg'):[],roles=pb?pb.querySelectorAll('.brole .r'):[];
+  var pf=document.getElementById('pinFlow'),fsteps=[],farrs=[],fcN=document.getElementById('fcN'),fcT=document.getElementById('fcT'),lastI=-1;
+  if(pf){pf.querySelectorAll('.track').forEach(function(tr){var kids=tr.querySelectorAll('.steps > *');kids.forEach(function(k){if(k.classList.contains('stp'))fsteps.push({el:k,arrow:k.previousElementSibling&&k.previousElementSibling.classList.contains('arw')?k.previousElementSibling:null});});});}
+  function ease(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;}
+  function stories(){
+    if(pb&&segs.length){var p=PIN?ease(Math.min(1,pgs(pb)/.75)):1;
+      segs[0].style.width=(60*p)+'%';segs[1].style.width=(40*p)+'%';
+      segs[0].querySelector('.bn').textContent='€'+Math.round(6000*p).toLocaleString('en-US');
+      segs[1].querySelector('.bn').textContent='€'+Math.round(4000*p).toLocaleString('en-US');
+      roles[0]&&roles[0].classList.toggle('on',p>.35);roles[1]&&roles[1].classList.toggle('on',p>.8);}
+    if(pf&&fsteps.length){var q=PIN?pgs(pf):1,n=fsteps.length,idx=Math.min(n-1,Math.floor(q*n*1.08));
+      if(idx!==lastI){lastI=idx;fsteps.forEach(function(o,i){o.el.classList.toggle('lit',i<=idx);o.el.classList.toggle('now',i===idx&&PIN);if(o.arrow)o.arrow.classList.toggle('lit',i<=idx);});
+        if(fcT){fcT.textContent=fsteps[idx].el.textContent;fcT.classList.remove('swap');void fcT.offsetWidth;fcT.classList.add('swap');fcN.textContent=('0'+(idx+1)).slice(-2)+' / '+('0'+n).slice(-2);}}}
+  }
+
+  /* ad phones: tilt toward the pointer, drift with scroll */
+  var adshow=document.getElementById('adshow'),adcs=adshow?[].slice.call(adshow.querySelectorAll('.adc')):[];
+  adcs.forEach(function(c){var ph=c.querySelector('.phone');ph.style.setProperty('--r',c.dataset.tilt);
+    if(RM)return;
+    c.addEventListener('mousemove',function(e){var r=ph.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;ph.style.setProperty('--ry',(x*14).toFixed(2)+'deg');ph.style.setProperty('--rx',(-y*10).toFixed(2)+'deg');});
+    c.addEventListener('mouseleave',function(){ph.style.setProperty('--ry','0deg');ph.style.setProperty('--rx','0deg');});});
+  function adDrift(){if(!adshow||RM)return;var r=adshow.getBoundingClientRect(),c=(r.top+r.height/2-innerHeight/2)/innerHeight;
+    adcs.forEach(function(a,i){a.querySelector('.phone').style.setProperty('--py',(c*(i?-40:40)).toFixed(1)+'px');});}
+  var skews=[].slice.call(document.querySelectorAll('.vskew')),sk=0,prog=document.getElementById('railProg');
+  function tick(t){
+    if(lenis)lenis.raf(t);else vel*=.9;
+    var tg=Math.max(-2.4,Math.min(2.4,vel*(lenis?.16:.12)));sk+=(tg-sk)*.12;
+    if(!RM)for(var i=0;i<skews.length;i++)skews[i].style.transform='skewY('+sk.toFixed(2)+'deg)';
+    stories();adDrift();
+    if(prog){var h=document.documentElement.scrollHeight-innerHeight;prog.style.setProperty('--p',h>0?(scrollY/h).toFixed(4):0);}
+    requestAnimationFrame(tick);}
+  requestAnimationFrame(tick);
+})();
+</script>
+<script>
+/* Device mockups: render the landing page at its real viewport size, then scale it to fit the frame,
+   so the laptop shows the true 1440px desktop layout and the phone shows the true mobile layout. */
+(function(){
+  var screens = [].slice.call(document.querySelectorAll('.devices .screen'));
+  function fit(){
+    screens.forEach(function(s){
+      var w = +s.dataset.w, h = +s.dataset.h, f = s.querySelector('iframe'), k = s.clientWidth / w;
+      f.style.width = w + 'px'; f.style.height = h + 'px'; f.style.transform = 'scale(' + k + ')';
+    });
+  }
+  fit();
+  if (window.ResizeObserver) { var ro = new ResizeObserver(fit); screens.forEach(function(s){ ro.observe(s); }); }
+  else addEventListener('resize', fit);
+
+  /* Click-to-interact: the page scroll stays with the case study until the reader opts in. */
+  screens.forEach(function(s){
+    var f = s.querySelector('iframe');
+    s.querySelector('.shield').addEventListener('click', function(){ s.classList.add('live'); f.removeAttribute('tabindex'); f.focus(); });
+    s.addEventListener('mouseleave', function(){ s.classList.remove('live'); f.setAttribute('tabindex', '-1'); });
+  });
+  document.addEventListener('click', function(e){
+    screens.forEach(function(s){ if (!s.contains(e.target)) s.classList.remove('live'); });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ORRA ONE · Book a Private Test Ride (Concept)</title>
+<meta name="description" content="ORRA ONE: a hand-built electric performance motorcycle. 0–100 km/h in 3.5 s, 180 km range. Book a private test ride. A speculative concept landing page from Ajinkya Bagade's portfolio.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://ajinkya-bagade-bronze.vercel.app/paid-ads/electric-motorcycle">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ajinkya Bagade · Portfolio">
+<meta property="og:url" content="https://ajinkya-bagade-bronze.vercel.app/paid-ads/electric-motorcycle">
+<meta property="og:title" content="ORRA ONE · Electric Performance, Hand-Built (Concept)">
+<meta property="og:description" content="A concept Google Ads landing page for a fictional premium electric motorcycle brand. Part of a paid acquisition case study.">
+<meta property="og:image" content="https://ajinkya-bagade-bronze.vercel.app/assets/orra/og-landing.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0c0e'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23ece9e2' stroke-width='4'/%3E%3Cpath d='M11 32h42' stroke='%238fb0dc' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,200..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b0c0e; --ink2:#101215; --ink3:#15181c; --ink4:#1b1f25;
+  --bone:#ece9e2; --bone2:#d9d5cc; --mute:#9a978f; --mute2:#6f6d68;
+  --line:rgba(236,233,226,.12); --line2:rgba(236,233,226,.22);
+  --blue:#8fb0dc; --blue2:#5d7fae; --navy:#1d2c44;
+  --gut:clamp(20px,5vw,80px); --max:1440px;
+  --serif:'Instrument Serif',Georgia,'Times New Roman',serif;
+  --sans:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ease:cubic-bezier(.19,1,.22,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--ink);-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.6;
+  font-variation-settings:'wdth' 100;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:1px solid var(--blue);outline-offset:4px}
+section[id]{scroll-margin-top:72px}
+
+/* type */
+.lbl{font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;font-variation-settings:'wdth' 118;color:var(--mute)}
+.lbl b{color:var(--bone);font-weight:500}
+.disp{font-family:var(--serif);font-weight:400;line-height:.95;letter-spacing:-.015em}
+.disp em{font-style:italic;color:var(--bone2)}
+.lede{font-size:clamp(16px,1.35vw,19px);color:var(--mute);max-width:34em;line-height:1.65}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.sup{font-size:max(11px,.2em);vertical-align:super;color:var(--mute2);font-family:var(--sans);font-weight:400;letter-spacing:0;margin-left:.25em;line-height:0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:14px;height:52px;padding:0 26px;border:1px solid var(--bone);background:var(--bone);color:var(--ink);
+  font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-variation-settings:'wdth' 115;text-decoration:none;cursor:pointer;
+  transition:background .4s var(--ease),color .4s var(--ease),border-color .4s}
+.btn:hover{background:transparent;color:var(--bone)}
+.btn.ghost{background:transparent;color:var(--bone);border-color:var(--line2)}
+.btn.ghost:hover{border-color:var(--bone)}
+.btn .ar{transition:transform .4s var(--ease)}
+.btn:hover .ar{transform:translateX(4px)}
+.tlink{display:inline-flex;gap:10px;align-items:center;font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-variation-settings:'wdth' 115;
+  text-decoration:none;padding-bottom:6px;border-bottom:1px solid var(--line2);transition:border-color .3s}
+.tlink:hover{border-color:var(--bone)}
+
+/* concept strip */
+.concept{background:#000;color:var(--mute);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-variation-settings:'wdth' 112;
+  text-align:center;padding:9px 16px;border-bottom:1px solid var(--line)}
+.concept a{color:var(--bone);text-decoration:none;border-bottom:1px solid var(--line2);margin-left:6px}
+.concept a:hover{border-color:var(--bone)}
+@media(max-width:600px){.concept{font-size:10px;letter-spacing:.1em}.concept .long{display:none}}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;height:68px;display:flex;align-items:center;transition:background .5s,border-color .5s,backdrop-filter .5s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(11,12,14,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%;gap:24px}
+.mark{display:inline-flex;align-items:center;gap:12px;text-decoration:none}
+.mark svg{width:22px;height:22px}
+.mark span{font-size:15px;font-weight:500;letter-spacing:.5em;font-variation-settings:'wdth' 125;margin-right:-.5em}
+.nav ul{display:flex;gap:34px;list-style:none}
+.nav ul a{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-variation-settings:'wdth' 115;text-decoration:none;color:var(--mute);transition:color .3s}
+.nav ul a:hover{color:var(--bone)}
+.nav .right{display:flex;align-items:center;gap:26px}
+.nav .btn{height:40px;padding:0 18px;font-size:10.5px}
+.nav .dl{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-variation-settings:'wdth' 115;color:var(--mute);text-decoration:none}
+.nav .dl:hover{color:var(--bone)}
+@media(max-width:1020px){.nav ul,.nav .dl{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:min(calc(100svh - 68px - 34px),960px);display:flex;flex-direction:column;overflow:hidden;
+  background:radial-gradient(55% 60% at 74% 55%,#141c28 0%,#0d1016 55%,var(--ink) 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.55));pointer-events:none}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:clamp(36px,7vh,80px)}
+.hero h1{font-size:clamp(46px,7.4vw,124px);max-width:11.5em;margin:22px 0 26px}
+.hero .lede{max-width:30em}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.hero h1{font-size:clamp(46px,min(5.8vw,10vh),108px)}
+.hero h1{max-width:8.6em}
+.stage{position:absolute;z-index:1;top:10%;right:0;bottom:0;width:66%;pointer-events:none;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 22%),linear-gradient(180deg,transparent 0%,#000 30%);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(90deg,transparent 0%,#000 22%),linear-gradient(180deg,transparent 0%,#000 30%);mask-composite:intersect}
+.stage .bike{position:absolute;inset:0;transform:translate3d(0,var(--py,0),0);will-change:transform}
+.stage .bike img{width:100%;height:100%;object-fit:contain;object-position:100% 100%}
+.hero .meta{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:flex-end;padding:0 var(--gut) 26px;max-width:var(--max);margin:auto auto 0;width:100%}
+.hero .meta .lbl{font-size:10px}
+.scrollcue{display:flex;align-items:center;gap:12px}
+.scrollcue i{display:block;width:1px;height:38px;background:linear-gradient(var(--bone),transparent);animation:cue 2.4s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media(max-width:760px){.hero{min-height:0}.stage{position:relative;width:auto;margin:6px calc(var(--gut) * -1) 0;top:auto;aspect-ratio:4/3;-webkit-mask-image:none;mask-image:none}.stage .bike img{object-fit:cover;object-position:88% 55%}.hero .meta{margin-top:0}.hero .meta .lbl:last-child{display:none}}
+
+/* intro sequencing */
+.in-h{opacity:0;transform:translateY(22px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease)}
+.loaded .in-h{opacity:1;transform:none}
+.loaded .in-h.d1{transition-delay:.12s}.loaded .in-h.d2{transition-delay:.26s}.loaded .in-h.d3{transition-delay:.4s}
+.stage .bike{opacity:0;transition:opacity 1.8s ease .3s}
+.loaded .stage .bike{opacity:1}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.rv.on{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* section scaffolding */
+.sec{padding:clamp(90px,14vh,170px) 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:clamp(36px,6vh,64px)}
+.idx{font-size:11px;letter-spacing:.24em;color:var(--mute2);font-variation-settings:'wdth' 118}
+
+/* proposition */
+.prop .grid{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(30px,6vw,110px);align-items:end}
+.prop h2{font-size:clamp(64px,11vw,190px)}
+.prop .lede{max-width:28em}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(60px,10vh,110px);border-top:1px solid var(--line2)}
+.stat{padding:28px 28px 0 0;margin-right:28px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0;margin-right:0}
+.stat .k{display:block;margin-bottom:22px}
+.stat .v{font-family:var(--serif);font-size:clamp(52px,6.4vw,104px);line-height:.9;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stat .v small{font-size:.38em;margin-left:.15em;color:var(--mute);letter-spacing:0}
+.stat .d{font-size:13.5px;color:var(--mute);margin-top:16px;max-width:22em}
+.footn{font-size:11.5px;color:var(--mute2);margin-top:44px;max-width:60em}
+@media(max-width:820px){.prop .grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-right:0;margin-right:0;border-bottom:1px solid var(--line);padding:26px 0}}
+
+/* performance */
+.perf{padding:0;border-top:1px solid var(--line)}
+.perf .split{display:grid;grid-template-columns:1.1fr 1fr;min-height:100vh}
+.perf .media{position:relative;overflow:hidden;background:#000}
+.perf .media img{width:100%;height:100%;object-fit:cover;object-position:22% 45%;transform:scale(var(--sc,1.08));transition:transform .2s linear}
+.perf .media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,12,14,0) 55%,var(--ink) 100%),linear-gradient(0deg,rgba(11,12,14,.6),transparent 40%)}
+.perf .media .cap{position:absolute;left:var(--gut);bottom:28px;z-index:2}
+.perf .copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(60px,10vh,120px) var(--gut) clamp(60px,10vh,120px) clamp(24px,4vw,64px)}
+.perf h2{font-size:clamp(44px,5.4vw,92px);margin:22px 0 26px}
+.big{display:flex;align-items:flex-end;gap:18px;margin:clamp(36px,6vh,60px) 0 18px}
+.big .n{font-family:var(--serif);font-size:clamp(110px,13vw,220px);line-height:.78;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.big .u{padding-bottom:10px}
+.big .u b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(28px,2.6vw,44px);line-height:1}
+.accel{margin:18px 0 40px;max-width:520px}
+.accel .bar{position:relative;height:1px;background:var(--line2)}
+.accel .bar i{position:absolute;left:0;top:-1px;height:3px;width:0;background:var(--bone)}
+.accel.go .bar i{animation:accel 3.5s cubic-bezier(.3,0,.25,1) forwards}
+@keyframes accel{to{width:100%}}
+.accel .ticks{display:flex;justify-content:space-between;margin-top:12px}
+.accel .ticks span{font-size:10.5px;letter-spacing:.18em;color:var(--mute2);font-variation-settings:'wdth' 115}
+.accel .clock{font-variant-numeric:tabular-nums;color:var(--bone)}
+@media(max-width:900px){.perf .split{grid-template-columns:1fr;min-height:0}.perf .media{aspect-ratio:4/3}.perf .media::after{background:linear-gradient(0deg,var(--ink) 0%,transparent 45%)}}
+
+/* engineering */
+.eng{background:linear-gradient(180deg,var(--ink) 0%,var(--ink2) 100%)}
+.eng .head{text-align:center;max-width:980px;margin:0 auto}
+.eng h2{font-size:clamp(56px,8.6vw,150px);margin:22px 0 22px}
+.eng .lede{margin:0 auto;text-align:center}
+.pt{position:relative;margin:clamp(40px,8vh,90px) auto 0;max-width:1440px;opacity:0;transform:scale(1.03);transition:opacity 1.4s ease,transform 2s var(--ease)}
+.pt.on{opacity:1;transform:none}
+.pt img,.showcase img{width:100%;height:auto;display:block;-webkit-mask-image:radial-gradient(72% 78% at 50% 50%,#000 60%,transparent 100%);mask-image:radial-gradient(72% 78% at 50% 50%,#000 60%,transparent 100%)}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);margin-top:clamp(50px,9vh,100px)}
+.feat{border-top:1px solid var(--line2);padding-top:26px}
+.feat .no{font-size:11px;letter-spacing:.2em;color:var(--mute2)}
+.feat h3{font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;font-variation-settings:'wdth' 118;margin:18px 0 12px}
+.feat p{font-size:15px;color:var(--mute);max-width:24em}
+@media(max-width:820px){.feats{grid-template-columns:1fr}.pt{overflow:hidden}.pt img{width:150%;max-width:none;margin-left:-25%}}
+
+/* range */
+.range .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,110px);align-items:center}
+.topo{position:relative;aspect-ratio:1/1;max-width:640px;width:100%}
+.topo svg{width:100%;height:100%}
+.topo .route{stroke-dasharray:1400;stroke-dashoffset:1400;transition:stroke-dashoffset 3s var(--ease)}
+.topo.on .route{stroke-dashoffset:0}
+.range h2{font-size:clamp(48px,6vw,104px);margin:22px 0 24px}
+.specs{margin:40px 0 46px;border-top:1px solid var(--line2)}
+.spec{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.spec .v{font-family:var(--serif);font-size:clamp(28px,2.6vw,40px);line-height:1}
+.spec .v small{font-family:var(--sans);font-size:12px;color:var(--mute);margin-left:8px;letter-spacing:.06em}
+.faq{border-top:1px solid var(--line2)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;font-size:16px;font-weight:400;color:var(--bone)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{position:relative;width:12px;height:12px;flex:none}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:0;top:50%;width:12px;height:1px;background:var(--bone);transition:transform .4s var(--ease)}
+.faq summary i::after{transform:rotate(90deg)}
+.faq details[open] summary i::after{transform:rotate(0)}
+.faq .a{padding:0 40px 22px 0;color:var(--mute);font-size:15px;max-width:36em}
+@media(max-width:900px){.range .grid{grid-template-columns:1fr}.topo{max-width:520px;margin:0 auto}.spec{grid-template-columns:110px 1fr}}
+
+/* design */
+.design{background:radial-gradient(70% 60% at 50% 55%,#18273d 0%,#0f151e 45%,var(--ink) 80%);overflow:hidden}
+.design .head{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(30px,6vw,110px);align-items:end}
+.design h2{font-size:clamp(46px,6.2vw,108px);margin-top:22px}
+.showcase{position:relative;margin:clamp(40px,8vh,90px) auto 0;max-width:1440px;opacity:0;transform:translateY(30px);transition:opacity 1.4s ease,transform 1.6s var(--ease)}
+.showcase.on{opacity:1;transform:none}
+.hot{position:absolute;width:0;height:0;opacity:0;transition:opacity .9s ease .8s}
+.showcase.on .hot{opacity:1}
+.hot i{position:absolute;left:-6px;top:-6px;width:12px;height:12px;border-radius:50%;border:1px solid var(--bone);background:rgba(11,12,14,.55);box-shadow:0 0 0 4px rgba(236,233,226,.12)}
+.hot b{position:absolute;top:0;height:1px;width:var(--len,80px);background:rgba(236,233,226,.55)}
+.hot span{position:absolute;top:-7px;font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-variation-settings:'wdth' 115;color:var(--bone);white-space:nowrap;text-shadow:0 1px 12px rgba(0,0,0,.9)}
+.hot.r b{left:8px}.hot.r span{left:calc(var(--len,80px) + 18px)}
+.hot.l b{right:8px}.hot.l span{right:calc(var(--len,80px) + 18px)}
+.hot.d b{left:0;top:8px;width:1px;height:var(--len,110px)}.hot.d span{top:calc(var(--len,110px) + 16px);left:0;transform:translateX(-50%)}
+@media(max-width:1000px){.hot{display:none}}
+.crafts{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,2vw,32px);margin-top:clamp(40px,8vh,80px)}
+.craft{border-top:1px solid var(--line2);padding-top:20px}
+.craft .no{font-size:11px;letter-spacing:.2em;color:var(--mute2)}
+.craft h3{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.05;margin:14px 0 10px}
+.craft p{font-size:13.5px;color:var(--mute)}
+@media(max-width:1000px){.crafts{grid-template-columns:repeat(2,1fr)}.design .head{grid-template-columns:1fr}}
+@media(max-width:560px){.crafts{grid-template-columns:1fr}}
+
+/* experience */
+.exp{position:relative;min-height:110vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;border-top:1px solid var(--line);background:#07080a}
+.exp .scene{position:absolute;inset:0}
+.exp .scene svg{width:100%;height:100%}
+.exp .road{animation:dash 1.1s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-120}}
+.exp .beam{animation:breathe 6s ease-in-out infinite}
+@keyframes breathe{50%{opacity:.75}}
+.exp .copy{position:relative;z-index:2;padding:0 var(--gut);max-width:1200px;margin-top:-14vh}
+.exp h2{font-size:clamp(50px,8vw,140px);margin:24px 0 28px;text-shadow:0 10px 60px rgba(0,0,0,.6)}
+.exp .lede{margin:0 auto 14px;color:var(--bone2)}
+.exp .small{font-size:14px;color:var(--mute);margin-bottom:40px}
+
+/* form */
+.book .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(30px,6vw,120px)}
+.book h2{font-size:clamp(50px,6.6vw,116px);margin:22px 0 26px}
+.expect{list-style:none;margin-top:44px;border-top:1px solid var(--line2)}
+.expect li{display:grid;grid-template-columns:40px 1fr;padding:18px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--mute)}
+.expect li span{font-size:11px;letter-spacing:.2em;color:var(--mute2);padding-top:3px}
+.panel{background:var(--ink2);border:1px solid var(--line);padding:clamp(26px,4vw,52px)}
+.steps{display:flex;gap:28px;margin-bottom:34px}
+.steps span{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-variation-settings:'wdth' 115;color:var(--mute2);padding-bottom:10px;border-bottom:1px solid transparent}
+.steps span.on{color:var(--bone);border-color:var(--bone)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px 22px}
+.f{display:flex;flex-direction:column;gap:9px}
+.f.full{grid-column:1/-1}
+.f label{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;font-variation-settings:'wdth' 115;color:var(--mute)}
+.f label em{font-style:normal;color:var(--mute2);letter-spacing:.08em;text-transform:none;margin-left:6px}
+.f input,.f select,.f textarea{background:transparent;border:0;border-bottom:1px solid var(--line2);padding:10px 0 12px;font-size:16px;color:var(--bone);border-radius:0;outline:none;transition:border-color .3s;-webkit-appearance:none;appearance:none}
+.f select{background-image:linear-gradient(45deg,transparent 50%,var(--mute) 50%),linear-gradient(135deg,var(--mute) 50%,transparent 50%);background-position:calc(100% - 10px) 52%,calc(100% - 5px) 52%;background-size:5px 5px;background-repeat:no-repeat;padding-right:24px}
+.f select option{background:var(--ink2);color:var(--bone)}
+.f textarea{resize:vertical;min-height:90px}
+.f select:required:invalid{color:var(--mute2)}
+.f input:focus,.f select:focus,.f textarea:focus{border-color:var(--bone)}
+.f input:user-invalid,.f select:user-invalid{border-color:#c8796e}
+.factions{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:36px}
+.privacy{font-size:12px;color:var(--mute2);margin-top:26px;line-height:1.6}
+.skip{background:none;border:0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);cursor:pointer;font-variation-settings:'wdth' 115;border-bottom:1px solid var(--line2);padding-bottom:5px}
+.skip:hover{color:var(--bone)}
+[hidden]{display:none!important}
+.done{text-align:left}
+.done .tick{width:54px;height:54px;border:1px solid var(--bone);border-radius:50%;display:grid;place-items:center;margin-bottom:28px}
+.done h3{font-family:var(--serif);font-weight:400;font-size:clamp(34px,3.4vw,52px);line-height:1;margin-bottom:16px}
+.done p{color:var(--mute);max-width:30em}
+.done .note{margin-top:22px;padding:16px 18px;border:1px solid var(--line);font-size:13px;color:var(--bone2)}
+.dealer-cta{margin-top:30px;font-size:14px;color:var(--mute)}
+.dealer-cta a{margin-left:8px}
+@media(max-width:960px){.book .grid{grid-template-columns:1fr}}
+@media(max-width:560px){.fgrid{grid-template-columns:1fr}}
+
+/* dealers */
+.dealers{background:var(--ink2)}
+.dealers .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(30px,6vw,120px);align-items:start}
+.dealers h2{font-size:clamp(38px,4.2vw,70px);margin:22px 0 22px}
+@media(max-width:960px){.dealers .grid{grid-template-columns:1fr}}
+
+/* final */
+.final{background:#000;text-align:center;padding:clamp(120px,22vh,240px) 0}
+.final h2{font-size:clamp(46px,7.6vw,132px);line-height:.98}
+.final h2 span{display:block;color:var(--mute)}
+.final .btn{margin-top:clamp(40px,7vh,70px)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:56px 0 calc(56px + env(safe-area-inset-bottom))}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px}
+footer p{font-size:13px;color:var(--mute2);max-width:34em}
+footer h4{font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin-bottom:16px;font-variation-settings:'wdth' 115}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+footer ul a{font-size:13px;color:var(--bone2);text-decoration:none}
+footer ul a:hover{color:var(--bone)}
+footer .legal{grid-column:1/-1;border-top:1px solid var(--line);padding-top:26px;font-size:11.5px;color:var(--mute2);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:820px){footer .wrap{grid-template-columns:1fr}}
+
+/* mobile sticky CTA */
+.mcta{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(11,12,14,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);transform:translateY(110%);transition:transform .6s var(--ease);display:none}
+.mcta .btn{width:100%;justify-content:center}
+.mcta.show{transform:none}
+@media(max-width:760px){.mcta{display:block}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv,.in-h,.stage .bike{opacity:1!important;transform:none!important;transition:none!important}
+  .topo .route{stroke-dashoffset:0!important;transition:none!important}
+  .pt,.showcase,.hot{opacity:1!important;transform:none!important}
+  .exp .road,.exp .beam,.scrollcue i{animation:none}
+  .accel.go .bar i{animation:none;width:100%}
+}
+</style>
+</head>
+<body>
+<div class="concept" role="note">Speculative concept<span class="long"> · Portfolio case study by Ajinkya Bagade</span><a href="/case-studies/electric-motorcycle-paid-acquisition">Read the case study →</a></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="ORRA home">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1 12h22" stroke="#8fb0dc" stroke-width="1.4"/></svg>
+      <span>ORRA</span>
+    </a>
+    <ul>
+      <li><a href="#performance">Performance</a></li>
+      <li><a href="#engineering">Engineering</a></li>
+      <li><a href="#range">Range</a></li>
+      <li><a href="#design">Design</a></li>
+    </ul>
+    <div class="right">
+      <a class="dl" href="#dealers">Dealers</a>
+      <a class="btn" href="#book">Book a test ride</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 01 HERO -->
+<section class="hero" aria-labelledby="h-hero">
+  <div class="wrap">
+    <div class="lbl in-h"><b>ORRA ONE</b> &nbsp;·&nbsp; Hand-built electric motorcycle</div>
+    <h1 class="disp in-h d1" id="h-hero">The next generation of <em>electric performance.</em></h1>
+    <p class="lede in-h d2">Hand-built electric performance. Precision engineering. A completely different riding experience.</p>
+    <div class="ctas in-h d3">
+      <a class="btn" href="#book">Book a private test ride <span class="ar">→</span></a>
+      <a class="btn ghost" href="#proposition">Explore the machine <span class="ar">↓</span></a>
+    </div>
+  </div>
+  <div class="stage">
+    <div class="bike" id="heroBike"><img src="/assets/orra/orra-one-side.webp" alt="ORRA ONE electric motorcycle in midnight blue with orange accents, side view in a dark studio" width="1536" height="1024" fetchpriority="high" decoding="async"></div>
+  </div>
+  <div class="meta">
+    <div class="scrollcue lbl"><i></i>Scroll</div>
+    <div class="lbl">Germany · France · Belgium · Netherlands</div>
+  </div>
+</section>
+
+<!-- 02 PROPOSITION -->
+<section class="sec prop" id="proposition" aria-labelledby="h-prop">
+  <div class="wrap">
+    <div class="grid">
+      <h2 class="disp rv" id="h-prop">Built <em>differently.</em></h2>
+      <p class="lede rv d1">ORRA ONE is for riders who never wanted to give up the feeling of a performance motorcycle. Every frame is finished by hand, every powertrain is tuned for response, and the result rides like nothing else on the road.</p>
+    </div>
+    <div class="stats">
+      <div class="stat rv"><span class="lbl k">0–100 km/h</span><div class="v"><span data-spec="accel">3.5</span><small>sec</small><sup class="sup">1</sup></div><p class="d">Instant electric torque from a standstill. No clutch, no gearshift, no wait.</p></div>
+      <div class="stat rv d1"><span class="lbl k">Range</span><div class="v"><span data-spec="range">180</span><small>km</small><sup class="sup">1</sup></div><p class="d">Enough for the commute, the weekend ride and the long way home.</p></div>
+      <div class="stat rv d2"><span class="lbl k">From</span><div class="v"><span data-spec="price">€30,000</span><small>+</small></div><p class="d">A premium motorcycle, hand-built and specified to order.</p></div>
+    </div>
+    <p class="footn rv">1 · Concept specification for a fictional product, used for this case study. Not a homologated or tested figure.</p>
+  </div>
+</section>
+
+<!-- 03 PERFORMANCE -->
+<section class="perf" id="performance" aria-labelledby="h-perf">
+  <div class="split">
+    <div class="media" id="perfMedia">
+      <img src="/assets/orra/performance-dash.jpg" alt="ORRA ONE instrument display at speed on a coastal road at dusk" width="720" height="520" loading="lazy" decoding="async">
+      <div class="cap lbl">Sport mode · rider's view</div>
+    </div>
+    <div class="copy">
+      <div class="lbl rv"><span class="idx">01</span> &nbsp; Performance</div>
+      <h2 class="disp rv d1" id="h-perf">Instant torque. <em>Pure electric performance.</em></h2>
+      <p class="lede rv d2">Performance without compromise. Instant electric response meets the character and precision of a performance motorcycle.</p>
+      <div class="big rv">
+        <div class="n" data-spec="accel">3.5</div>
+        <div class="u"><b>seconds</b><span class="lbl">0–100 km/h<sup class="sup">1</sup></span></div>
+      </div>
+      <div class="accel rv" id="accel" aria-hidden="true">
+        <div class="bar"><i></i></div>
+        <div class="ticks"><span>0 km/h</span><span class="clock" id="accClock">0.0 s</span><span>100 km/h</span></div>
+      </div>
+      <div class="rv"><a class="tlink" href="#book">Experience the performance →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 ENGINEERING -->
+<section class="sec eng" id="engineering" aria-labelledby="h-eng">
+  <div class="wrap">
+    <div class="head">
+      <div class="lbl rv"><span class="idx">02</span> &nbsp; Engineering</div>
+      <h2 class="disp rv d1" id="h-eng">Precision <em>engineering.</em></h2>
+      <p class="lede rv d2">Precision engineering for a cleaner, more exhilarating ride. Every component exists to make the motorcycle respond the moment you ask.</p>
+    </div>
+    <figure class="pt" id="pt">
+      <img src="/assets/orra/powertrain.webp" alt="Exploded view of the ORRA ONE electric powertrain: final drive, rotor with permanent magnets, stator with copper windings, axial-flux motor, inverter and high-voltage battery connection" width="1672" height="941" loading="lazy" decoding="async">
+    </figure>
+    <div class="feats">
+      <div class="feat rv"><span class="no">— 01</span><h3>Instant response</h3><p>Full torque arrives the moment you open the throttle. No clutch, no gears to hunt for, no lag.</p></div>
+      <div class="feat rv d1"><span class="no">— 02</span><h3>Advanced engineering</h3><p>A compact axial-flux motor and single-speed final drive, packaged low around the battery for a planted, precise chassis.</p></div>
+      <div class="feat rv d2"><span class="no">— 03</span><h3>Zero tailpipe emissions</h3><p>No exhaust, no fuel, no tailpipe. Just the road, the wind and the motorcycle under you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 RANGE -->
+<section class="sec range" id="range" aria-labelledby="h-range">
+  <div class="wrap grid">
+    <div class="topo rv" id="topo" aria-hidden="true">
+      <svg viewBox="0 0 640 640">
+        <g fill="none" stroke="rgba(236,233,226,.09)" stroke-width="1">
+          <path d="M60,420 C40,300 120,170 250,130 C380,90 520,140 570,250 C620,360 560,500 430,540 C300,580 80,540 60,420Z"/>
+          <path d="M100,410 C85,310 150,200 260,168 C370,136 490,175 530,265 C570,355 520,470 415,502 C310,534 115,510 100,410Z"/>
+          <path d="M140,400 C130,320 180,232 270,206 C360,180 455,212 488,282 C520,352 482,440 400,465 C318,490 150,480 140,400Z"/>
+          <path d="M182,392 C176,330 212,265 280,245 C348,225 420,250 446,300 C470,350 444,412 384,430 C324,448 188,452 182,392Z"/>
+          <path d="M226,384 C224,342 248,302 292,290 C336,278 382,294 400,322 C416,350 400,388 362,398 C324,408 228,420 226,384Z"/>
+          <path d="M270,372 C270,352 282,334 304,330 C326,326 348,334 354,348 C360,362 350,378 332,380 C314,382 270,390 270,372Z"/>
+          <path d="M20,180 C90,110 170,60 300,50 M330,610 C430,600 540,560 610,470 M20,560 C60,600 120,620 200,625"/>
+          <path d="M600,100 C560,60 500,40 430,40"/>
+        </g>
+        <g stroke="rgba(236,233,226,.05)" stroke-width="1"><path d="M0,160 H640 M0,320 H640 M0,480 H640 M160,0 V640 M320,0 V640 M480,0 V640"/></g>
+        <path class="route" d="M96,560 C150,520 150,450 210,430 C280,405 300,470 360,450 C430,425 380,330 440,300 C500,270 540,320 560,250 C580,180 520,140 540,90" fill="none" stroke="#ece9e2" stroke-width="2"/>
+        <circle cx="96" cy="560" r="6" fill="#ece9e2"/>
+        <circle cx="540" cy="90" r="9" fill="none" stroke="#8fb0dc" stroke-width="2"/><circle cx="540" cy="90" r="3.5" fill="#8fb0dc"/>
+        <circle cx="360" cy="450" r="4" fill="#0b0c0e" stroke="#ece9e2" stroke-width="1.5"/>
+        <g font-family="Archivo,sans-serif" font-size="12" letter-spacing="2.4" fill="#9a978f">
+          <text x="112" y="590">0 KM</text><text x="374" y="476">90 KM</text><text x="560" y="96" fill="#ece9e2">180 KM ¹</text>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <div class="lbl rv"><span class="idx">03</span> &nbsp; Range &amp; charging</div>
+      <h2 class="disp rv d1" id="h-range">Go further. <em>Charge smarter.</em></h2>
+      <p class="lede rv d2">Designed around the realities of everyday riding, with the range and charging experience to make electric performance practical.</p>
+      <div class="specs rv">
+        <div class="spec"><span class="lbl">Range</span><span class="v"><span data-spec="range">180</span> km<small>concept specification ¹</small></span></div>
+        <div class="spec"><span class="lbl">Charging</span><span class="v">Fast charging<small>home &amp; public DC</small></span></div>
+        <div class="spec"><span class="lbl">Powertrain</span><span class="v">Electric<small>single-speed final drive</small></span></div>
+      </div>
+      <div class="faq rv">
+        <details><summary>How far can I ride? <i></i></summary><div class="a">ORRA ONE is specified for a range of up to 180 km on a full charge. As with any electric vehicle, real-world range depends on speed, temperature, terrain and riding mode.</div></details>
+        <details><summary>How does charging work? <i></i></summary><div class="a">You can charge at home or at public fast-charging stations. Your ORRA specialist will walk you through charging times and the right home set-up for how you ride.</div></details>
+        <details><summary>Where can I charge? <i></i></summary><div class="a">At home, at work, and on the public charging networks across Germany, France, Belgium and the Netherlands. We help you plan around the stations on the routes you ride most.</div></details>
+        <details><summary>Is it suitable for longer journeys? <i></i></summary><div class="a">Yes, with a little planning. Longer rides work best with a fast-charging stop built into the route, usually the same moment you would stop for a coffee anyway.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 DESIGN -->
+<section class="sec design" id="design" aria-labelledby="h-design">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="lbl rv"><span class="idx">04</span> &nbsp; Design &amp; craftsmanship</div>
+        <h2 class="disp rv d1" id="h-design">Designed to be seen. <em>Engineered to be ridden.</em></h2>
+      </div>
+      <p class="lede rv d2">A hand-built electric motorcycle where form, materials and engineering are treated as one. Nothing is styled for its own sake; everything you see is doing a job.</p>
+    </div>
+    <figure class="showcase" id="showcase">
+      <img src="/assets/orra/orra-one-three-quarter.webp" alt="ORRA ONE three-quarter view: LED headlight, gold-anodised forks, ribbed battery enclosure, hand-stitched seat and exposed rear spring" width="1536" height="1024" loading="lazy" decoding="async">
+      <div class="hot r" style="left:72.6%;top:36.4%"><i></i><b></b><span>Signature LED headlight</span></div>
+      <div class="hot r" style="left:68.2%;top:47%;--len:110px"><i></i><b></b><span>Gold-anodised forks</span></div>
+      <div class="hot l" style="left:32.5%;top:31%"><i></i><b></b><span>Hand-stitched seat</span></div>
+      <div class="hot l" style="left:34.2%;top:51.5%;--len:150px"><i></i><b></b><span>Exposed rear spring</span></div>
+      <div class="hot d" style="left:50%;top:58%"><i></i><b></b><span>Ribbed battery enclosure</span></div>
+    </figure>
+<div class="crafts">
+      <div class="craft rv"><span class="no">01</span><h3>Hand-built</h3><p>Each motorcycle is assembled and finished by hand, in small numbers.</p></div>
+      <div class="craft rv d1"><span class="no">02</span><h3>Premium materials</h3><p>Machined aluminium, hand-finished paint and stitched leather.</p></div>
+      <div class="craft rv d2"><span class="no">03</span><h3>Distinctive design</h3><p>A silhouette that is recognisably ORRA from fifty metres away.</p></div>
+      <div class="craft rv d3"><span class="no">04</span><h3>Mechanical detail</h3><p>The aluminium chassis, the gold-anodised suspension and the battery enclosure are left on show, not hidden behind plastic.</p></div>
+      <div class="craft rv"><span class="no">05</span><h3>Craftsmanship</h3><p>Specified to order, with finishes chosen together with you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 EXPERIENCE -->
+<section class="exp" id="experience" aria-labelledby="h-exp">
+  <div class="scene" aria-hidden="true">
+    <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#07080a"/><stop offset=".5" stop-color="#121a26"/><stop offset=".7" stop-color="#3a3340"/><stop offset=".765" stop-color="#8a5a45"/><stop offset=".778" stop-color="#d79a6a"/><stop offset=".79" stop-color="#1a1714"/><stop offset="1" stop-color="#050505"/></linearGradient>
+        <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f3c79a" stop-opacity=".55"/><stop offset="1" stop-color="#f3c79a" stop-opacity="0"/></radialGradient>
+        <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#eef3fa" stop-opacity=".35"/><stop offset="1" stop-color="#eef3fa" stop-opacity="0"/></linearGradient>
+        <linearGradient id="roadG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14120f"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+      </defs>
+      <rect width="1600" height="1000" fill="url(#sky)"/>
+      <ellipse cx="800" cy="778" rx="560" ry="120" fill="url(#sun)"/>
+      <path d="M0,742 L120,712 L220,728 L360,684 L470,716 L560,698 L700,738 L800,772 L800,790 L0,790Z" fill="#0d0f13"/>
+      <path d="M800,772 L960,712 L1060,726 L1180,680 L1300,718 L1420,696 L1600,726 L1600,790 L800,790Z" fill="#0d0f13"/>
+      <path d="M0,790 L1600,790 L1600,1000 L0,1000Z" fill="#070707"/>
+      <path d="M786,790 L814,790 L1250,1000 L350,1000Z" fill="url(#roadG)"/>
+      <path class="beam" d="M800,1000 L600,792 L1000,792Z" fill="url(#beam)" opacity=".5"/>
+      <path class="road" d="M800,794 L800,1000" stroke="#c9c2b4" stroke-width="5" stroke-dasharray="40 80" opacity=".55"/>
+      <path d="M788,792 L362,1000 M812,792 L1238,1000" stroke="rgba(236,233,226,.25)" stroke-width="2"/>
+    </svg>
+  </div>
+  <div class="copy">
+    <div class="lbl rv"><span class="idx">05</span> &nbsp; The experience</div>
+    <h2 class="disp rv d1" id="h-exp">You don't understand it <em>until you ride it.</em></h2>
+    <p class="lede rv d2">Numbers tell you what it can do. The ride tells you why it matters.</p>
+    <p class="small rv d2">Experience the acceleration, response, design and engineering for yourself.</p>
+    <div class="rv d3"><a class="btn" href="#book">Book a private test ride <span class="ar">→</span></a></div>
+  </div>
+</section>
+
+<!-- 08 TEST RIDE FORM -->
+<section class="sec book" id="book" aria-labelledby="h-book">
+  <div class="wrap grid">
+    <div>
+      <div class="lbl rv">Private test ride</div>
+      <h2 class="disp rv d1" id="h-book">Ready to <em>experience it?</em></h2>
+      <p class="lede rv d2">Tell us where you are and when you're thinking of buying. An ORRA specialist will arrange a private ride at a time and place that suits you.</p>
+      <ul class="expect rv">
+        <li><span>01</span>A private, unhurried session with an ORRA specialist.</li>
+        <li><span>02</span>Available across Germany, France, Belgium and the Netherlands.</li>
+        <li><span>03</span>No obligation. Your details are used only to arrange your ride.</li>
+      </ul>
+    </div>
+    <div class="panel rv d1">
+      <form id="rideForm" novalidate>
+        <div class="steps" aria-hidden="true"><span class="on" id="st1">01 · About you</span><span id="st2">02 · Your ride <em style="font-style:normal;color:var(--mute2)">(optional)</em></span></div>
+        <fieldset id="step1" style="border:0">
+          <legend class="lbl" style="position:absolute;left:-9999px">About you</legend>
+          <div class="fgrid">
+            <div class="f full"><label for="fName">Full name</label><input id="fName" name="name" autocomplete="name" required></div>
+            <div class="f full"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" autocomplete="email" required></div>
+            <div class="f"><label for="fCountry">Country</label>
+              <select id="fCountry" name="country" required><option value="" selected disabled>Select</option><option>Germany</option><option>France</option><option>Belgium</option><option>Netherlands</option><option>Other</option></select></div>
+            <div class="f"><label for="fTime">Purchase timeframe</label>
+              <select id="fTime" name="timeframe" required><option value="" selected disabled>Select</option><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>Just exploring</option></select></div>
+          </div>
+          <div class="factions">
+            <button class="btn" type="button" id="toStep2">Continue <span class="ar">→</span></button>
+          </div>
+        </fieldset>
+        <fieldset id="step2" style="border:0" hidden>
+          <legend class="lbl" style="position:absolute;left:-9999px">Your ride (optional)</legend>
+          <div class="fgrid">
+            <div class="f"><label for="fPhone">Phone <em>optional</em></label><input id="fPhone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="f"><label for="fCity">City <em>optional</em></label><input id="fCity" name="city" autocomplete="address-level2"></div>
+            <div class="f full"><label for="fLoc">Preferred test-ride location <em>optional</em></label>
+              <select id="fLoc" name="location"><option value="" selected>No preference</option><option>Berlin</option><option>Munich</option><option>Hamburg</option><option>Paris</option><option>Lyon</option><option>Brussels</option><option>Antwerp</option><option>Amsterdam</option><option>Rotterdam</option></select></div>
+            <div class="f full"><label for="fMsg">Message <em>optional</em></label><textarea id="fMsg" name="message" rows="3"></textarea></div>
+          </div>
+          <div class="factions">
+            <button class="btn" type="submit">Request a private test ride <span class="ar">→</span></button>
+            <button class="skip" type="submit">Skip and send</button>
+          </div>
+        </fieldset>
+        <p class="privacy">We use your details only to arrange your test ride and will never sell them. You can ask us to delete them at any time. <br><b style="color:var(--bone2);font-weight:400">Concept page: nothing you enter here is sent or stored.</b></p>
+      </form>
+      <div class="done" id="rideDone" hidden tabindex="-1" aria-live="polite">
+        <div class="tick"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 10.5l4 4 8-9"/></svg></div>
+        <h3>Thank you.</h3>
+        <p>In a live campaign, an ORRA specialist would now contact you to arrange your private test ride, and the CRM would record you as a new lead.</p>
+        <div class="note">This is a concept experience; no data has been sent.</div>
+      </div>
+      <p class="dealer-cta">Dealer or retail partner? <a class="tlink" href="#dealers">Dealer enquiries →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- DEALERS (separate route to a separate sales owner) -->
+<section class="sec dealers" id="dealers" aria-labelledby="h-dealers">
+  <div class="wrap grid">
+    <div>
+      <div class="lbl rv">Partners</div>
+      <h2 class="disp rv d1" id="h-dealers">Dealer &amp; partner <em>enquiries.</em></h2>
+      <p class="lede rv d2">We're building a small, selective partner network across Western Europe. Partner conversations go to our partnerships team, separately from private test rides.</p>
+    </div>
+    <div class="panel rv d1">
+      <form id="dealerForm" novalidate>
+        <div class="fgrid">
+          <div class="f"><label for="dCo">Company</label><input id="dCo" name="company" autocomplete="organization" required></div>
+          <div class="f"><label for="dName">Contact name</label><input id="dName" name="name" autocomplete="name" required></div>
+          <div class="f"><label for="dEmail">Business email</label><input id="dEmail" name="email" type="email" autocomplete="email" required></div>
+          <div class="f"><label for="dReg">Country / region</label><input id="dReg" name="region" required></div>
+          <div class="f full"><label for="dMsg">About your business <em>optional</em></label><textarea id="dMsg" name="message" rows="3"></textarea></div>
+        </div>
+        <div class="factions"><button class="btn ghost" type="submit">Send partner enquiry <span class="ar">→</span></button></div>
+        <p class="privacy">Concept page: nothing you enter here is sent or stored.</p>
+      </form>
+      <div class="done" id="dealerDone" hidden tabindex="-1" aria-live="polite">
+        <h3>Thank you.</h3>
+        <p>In a live set-up this enquiry would be routed to the partnerships team, not the test-ride queue.</p>
+        <div class="note">This is a concept experience; no data has been sent.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 FINAL CTA -->
+<section class="final" aria-labelledby="h-final">
+  <div class="wrap">
+    <h2 class="disp rv" id="h-final">The future isn't something to watch.<span>It's something to ride.</span></h2>
+    <a class="btn rv d1" href="#book">Book a test ride <span class="ar">→</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="mark" href="#top" aria-label="ORRA"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1 12h22" stroke="#8fb0dc" stroke-width="1.4"/></svg><span>ORRA</span></a>
+      <p style="margin-top:18px">ORRA is a fictional brand created for a portfolio case study by Ajinkya Bagade. Product, specifications and imagery are concept work. No data entered on this page is sent or stored.</p>
+    </div>
+    <div>
+      <h4>The machine</h4>
+      <ul><li><a href="#performance">Performance</a></li><li><a href="#engineering">Engineering</a></li><li><a href="#range">Range &amp; charging</a></li><li><a href="#design">Design</a></li></ul>
+    </div>
+    <div>
+      <h4>About this page</h4>
+      <ul><li><a href="/case-studies/electric-motorcycle-paid-acquisition">Read the case study</a></li><li><a href="/paid-ads">Paid Ads portfolio</a></li><li><a href="/">Ajinkya Bagade · Portfolio</a></li></ul>
+    </div>
+    <div class="legal"><span>1 · Concept specifications, not homologated figures.</span><span>© 2026 · Concept work, not a real product</span></div>
+  </div>
+</footer>
+
+<div class="mcta" id="mcta"><a class="btn" href="#book">Book a private test ride <span class="ar">→</span></a></div>
+
+<script>
+/* Product specifications live here so the concept figures can be swapped for real ones in one place. */
+var ORRA_SPECS = { accel: '3.5', range: '180', price: '€30,000' };
+
+(function(){
+  var RM = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-spec]').forEach(function(el){ var v = ORRA_SPECS[el.dataset.spec]; if(v) el.textContent = v; });
+  requestAnimationFrame(function(){ setTimeout(function(){ document.body.classList.add('loaded'); }, 40); });
+
+
+  /* reveal + one-shot triggers */
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return;
+      e.target.classList.add(e.target.classList.contains('rv')?'on':'on');
+      if(e.target.id==='accel') runAccel(e.target);
+      io.unobserve(e.target); }); }, {threshold:.18, rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv,#pt,#topo,#showcase,#accel').forEach(function(n){ if(RM){ n.classList.add('on'); } else io.observe(n); });
+
+  function runAccel(node){ node.classList.add('go'); var c=document.getElementById('accClock'), dur=3500, t0=performance.now();
+    if(RM){ c.textContent='3.5 s'; return; }
+    (function f(t){ var k=Math.min(1,(t-t0)/dur); c.textContent=(k*3.5).toFixed(1)+' s'; if(k<1) requestAnimationFrame(f); })(t0); }
+
+  /* nav state, hero parallax, performance image scale, mobile CTA */
+  var nav=document.getElementById('nav'), bike=document.getElementById('heroBike'), media=document.getElementById('perfMedia'),
+      mcta=document.getElementById('mcta'), book=document.getElementById('book'), hero=document.querySelector('.hero'), ticking=false;
+  function onScroll(){ ticking=false; var y=scrollY, vh=innerHeight;
+    nav.classList.toggle('solid', y > 40);
+    if(!RM && bike) bike.style.setProperty('--py', (y*0.12).toFixed(1)+'px');
+    if(!RM && media){ var r=media.getBoundingClientRect(); var p=Math.max(0,Math.min(1,1-(r.top+r.height)/(vh+r.height))); media.querySelector('img').style.setProperty('--sc',(1.12-p*0.1).toFixed(3)); }
+    var b=book.getBoundingClientRect(), pastHero=hero.getBoundingClientRect().bottom<0, inBook=b.top<vh && b.bottom>0;
+    mcta.classList.toggle('show', pastHero && !inBook); }
+  addEventListener('scroll', function(){ if(!ticking){ ticking=true; requestAnimationFrame(onScroll); } }, {passive:true});
+  onScroll();
+
+  /* two-step test-ride form: concept only, nothing is sent anywhere */
+  var form=document.getElementById('rideForm'), s1=document.getElementById('step1'), s2=document.getElementById('step2');
+  document.getElementById('toStep2').addEventListener('click', function(){
+    var bad = [].slice.call(s1.querySelectorAll('[required]')).filter(function(f){ return !f.checkValidity(); });
+    if(bad.length){ bad[0].reportValidity(); return; }
+    s1.hidden=true; s2.hidden=false; document.getElementById('st1').classList.remove('on'); document.getElementById('st2').classList.add('on');
+    document.getElementById('fPhone').focus(); });
+  form.addEventListener('submit', function(e){ e.preventDefault(); form.reset(); form.hidden=true; var d=document.getElementById('rideDone'); d.hidden=false; d.focus(); });
+  var dform=document.getElementById('dealerForm');
+  dform.addEventListener('submit', function(e){ e.preventDefault();
+    var bad=[].slice.call(dform.querySelectorAll('[required]')).filter(function(f){ return !f.checkValidity(); });
+    if(bad.length){ bad[0].reportValidity(); return; }
+    dform.reset(); dform.hidden=true; var d=document.getElementById('dealerDone'); d.hidden=false; d.focus(); });
+})();
+</script>
+</body>
+</html>
