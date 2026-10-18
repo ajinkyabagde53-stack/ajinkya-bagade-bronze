@@ -30,6 +30,9 @@ syncTheme();
 /* Menu */
 $('#menuOpen').addEventListener('click', () => { $('#menu').showModal(); if (hasG && !reduced) gsap.from('.menu-links a', { yPercent:60, opacity:0, stagger:.05, duration:.9, ease:'expo.out' }); });
 $('#menuClose').addEventListener('click', () => $('#menu').close());
+/* The bar floats over the hero, then takes a backdrop so it never collides with text */
+const syncBar = () => $('.bar').classList.toggle('solid', scrollY > 40);
+addEventListener('scroll', syncBar, { passive:true }); syncBar();
 
 /* Clocks: Bengaluru is home, Manchester is the heart */
 function tick(){
@@ -230,7 +233,9 @@ const FIELD = { mx:.5, my:.5, tmx:.5, tmy:.5, rx:.5, ry:.5, rage:9, scroll:0, vi
     return RIMS[RIMS.length-1][1];
   };
   let ink = tok('--ink'), bronze = tok('--bronze'), k = 1, grains = [], visible = true;
-  $('#themeBtn').addEventListener('click', () => requestAnimationFrame(() => { ink = tok('--ink'); bronze = tok('--bronze'); }));
+  const recolour = () => requestAnimationFrame(() => { ink = tok('--ink'); bronze = tok('--bronze'); });
+  $('#themeBtn').addEventListener('click', recolour);
+  matchMedia('(prefers-color-scheme: light)').addEventListener('change', recolour);
   function size(){ const r = cv.getBoundingClientRect(), d = Math.min(devicePixelRatio || 1, 1.5); cv.width = Math.max(2, r.width*d); cv.height = Math.max(2, r.height*d); k = cv.width/1000; }
   function spawn(){
     const a = Math.random()*Math.PI*2, m = Math.sqrt(Math.random());
