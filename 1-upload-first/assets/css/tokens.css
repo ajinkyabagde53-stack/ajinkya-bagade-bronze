@@ -12,6 +12,7 @@
   /* paper stock used for cards inside the 3D fly-through and the phone feed */
   --stock:#F4EFE7; --stock-ink:#1C1712; --stock-ink-2:#4A4036; --stock-ink-3:#7A6E60; --white:#FFFFFF; --black:#000000;
   --device:#0B0A09; --device-edge:#3A332C;
+  --bar-bg:rgba(14,12,10,.82);
   /* the wire funnel */
   --wire:rgba(237,230,220,.34); --wire-2:rgba(237,230,220,.16); --wire-fill:rgba(237,230,220,.07); --leader:rgba(166,156,143,.55);
   /* the neon sign in the footer */
@@ -41,10 +42,12 @@
     --bg:#ECE8E2; --bg-2:#E2DDD5; --card:#F6F3EE; --ink:#17130F; --ink-2:#60574C; --rule:#D1C9BD; --rule-2:#B9AE9F;
     --bronze:#8A6239; --bronze-2:#B08A5E; --on-bronze:#F6F3EE; color-scheme:light;
     --wire:rgba(23,19,15,.38); --wire-2:rgba(23,19,15,.2); --wire-fill:rgba(23,19,15,.05); --leader:rgba(96,87,76,.55);
+    --bar-bg:rgba(236,232,226,.86);
   }
 }
 :root[data-theme="light"]{
   --bg:#ECE8E2; --bg-2:#E2DDD5; --card:#F6F3EE; --ink:#17130F; --ink-2:#60574C; --rule:#D1C9BD; --rule-2:#B9AE9F;
   --bronze:#8A6239; --bronze-2:#B08A5E; --on-bronze:#F6F3EE; color-scheme:light;
     --wire:rgba(23,19,15,.38); --wire-2:rgba(23,19,15,.2); --wire-fill:rgba(23,19,15,.05); --leader:rgba(96,87,76,.55);
+    --bar-bg:rgba(236,232,226,.86);
 }
