@@ -58,6 +58,10 @@ p{max-width:62ch}
 /* Top bar */
 .bar{position:fixed; top:0; left:0; right:0; z-index:300; padding:calc(18px + env(safe-area-inset-top,0px)) var(--gutter) 18px; display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:center; color:var(--white); mix-blend-mode:difference; pointer-events:none}
 .bar > *{pointer-events:auto}
+.bar::before{content:""; position:absolute; inset:0; z-index:-1; background:var(--bar-bg); border-bottom:1px solid var(--rule); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); opacity:0; transition:opacity var(--dur) var(--ease-out)}
+.bar.solid{mix-blend-mode:normal; color:var(--ink); pointer-events:auto}
+.bar.solid::before{opacity:1}
+.bar.solid .menu-btn{color:inherit}
 .mono-mark{display:flex; align-items:center; gap:12px; text-decoration:none; font:500 15px/1 var(--f-body); white-space:nowrap}
 .mono-mark i{font:400 22px/1 var(--f-display); font-style:normal; letter-spacing:-.04em}
 .clocks{display:flex; gap:22px; font:500 11.5px/1 var(--f-mono); letter-spacing:.08em; text-transform:uppercase; font-variant-numeric:tabular-nums; white-space:nowrap}
