@@ -1,0 +1,53 @@
+{
+  "rewrites": [
+    {
+      "source": "/brochures/(.*)",
+      "destination": "/2-upload-second/brochures/$1"
+    },
+    {
+      "source": "/",
+      "destination": "/1-upload-first/index.html"
+    },
+    {
+      "source": "/(case-studies/[^/.]+|paid-ads/[^/.]+|performance-cockpit|waypoint)",
+      "destination": "/1-upload-first/$1/index.html"
+    },
+    {
+      "source": "/(.*)/",
+      "destination": "/1-upload-first/$1/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/1-upload-first/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/paid-ads/electric-motorcycle(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/(img|media|brochures|assets)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    }
+  ]
+}
