@@ -281,7 +281,7 @@ if (hasG && !reduced){
   mm.add('(min-width: 901px) and (min-height: 761px)', () => {
     const tl = ch => gsap.timeline({ scrollTrigger:{ trigger:`[data-ch="${ch}"]`, start:'top top', end:'bottom bottom', scrub:1 } });
     $$('.chapter').forEach(sec => gsap.from($('.ch-text', sec).children, { y:60, opacity:0, stagger:.08, duration:1.2, ease:'expo.out', scrollTrigger:{ trigger:sec, start:'top 60%', once:true } }));
-    tl('orra').fromTo('.v-orra .c1', { yPercent:40 }, { yPercent:-18, ease:'none' }, 0).fromTo('.v-orra .c2', { yPercent:-30 }, { yPercent:22, ease:'none' }, 0).fromTo('.v-orra .c3', { yPercent:55 }, { yPercent:-28, ease:'none' }, 0);
+    if ($('[data-ch="orra"]')) tl('orra').fromTo('.v-orra .c1', { yPercent:40 }, { yPercent:-18, ease:'none' }, 0).fromTo('.v-orra .c2', { yPercent:-30 }, { yPercent:22, ease:'none' }, 0).fromTo('.v-orra .c3', { yPercent:55 }, { yPercent:-28, ease:'none' }, 0);
     tl('cockpit').fromTo('.v-cockpit .screen', { rotateX:52, rotateZ:-8, scale:.72, y:80 }, { rotateX:0, rotateZ:0, scale:1, y:0, ease:'power2.out' }, 0)
       .fromTo('.v-cockpit .verdicts span', { y:30, opacity:0 }, { y:0, opacity:1, stagger:.08, ease:'power2.out' }, .45);
     tl('collateral').fromTo('.fan .bro', { left:'28%', top:'20%', rotate:i => (i%2 ? 3 : -3) }, { left:i => `${i*7.4}%`, top:i => `calc(12% + ${Math.abs(i-3.5)*12}px)`, rotate:i => (i-3.5)*3.5, ease:'power2.inOut', stagger:.03 }, 0);
@@ -307,7 +307,7 @@ if (fine && !reduced) $$('.tool').forEach(t => {
    ARCHIVE: infinite drag canvas. Brochures open as flipbooks.
    ============================================================ */
 (function archive(){
-  const box = $('#archive'), layer = $('#tiles');
+  const box = $('#archive'), layer = $('#tiles'); if (!box) return;
   const cats = [['all','All'],['brochures','Brochures'],['renders','Renders'],['ads','Ad creatives']];
   $('#archTabs').innerHTML = cats.map((c,i) => `<button type="button" aria-pressed="${i===0}" data-c="${c[0]}">${c[1]}</button>`).join('');
   let items = ARCHIVE.map((a,i) => ({ a, i })), tiles = [], cw = 300, cols = 0, rows = 0, W = 0, H = 0;
