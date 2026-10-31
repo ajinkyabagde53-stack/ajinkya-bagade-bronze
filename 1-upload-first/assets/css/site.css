@@ -425,11 +425,10 @@ dialog.menu::backdrop{background:transparent}
 .nb-mast p{margin:0; color:var(--ink-2)}
 .nb-shelves{display:grid; grid-template-columns:repeat(4,1fr); border-block:1px solid var(--rule)}
 .nb-shelves b{font:400 clamp(1.1rem,1.6vw,1.4rem)/1.1 var(--f-display); padding:14px 16px; white-space:nowrap; text-align:left}
-.nb-shelves b:first-child{padding-left:0}
 .nb-shelves b + b{border-left:1px solid var(--rule)}
 @media (max-width:480px){
   .nb-shelves{grid-template-columns:repeat(2,1fr)}
-  .nb-shelves b:nth-child(3){padding-left:0; border-left:0}
+  .nb-shelves b:nth-child(3){border-left:0}
   .nb-shelves b:nth-child(n+3){border-top:1px solid var(--rule)}
 }
 .posts{list-style:none; margin:0; padding:0; border-top:1px solid var(--ink); counter-reset:p}
@@ -582,6 +581,13 @@ dialog.drawer[open]{animation:slidein .7s var(--ease-out)}
 .fold .p-cover .front::after{opacity:1; background:linear-gradient(270deg,rgba(0,0,0,.12),transparent 10%)}
 .fold .p-flap .front::after{opacity:1; background:linear-gradient(90deg,rgba(0,0,0,.12),transparent 10%)}
 .book,.fold{flex:none; margin:auto; cursor:pointer}
+
+/* lean layout: folded sections stay in the markup (site.js still binds to them) but are hidden */
+.bar .clocks, .chapter[data-ch="cockpit"], #workshop .agent, .emails-strip, #wanderwitty .nb-top > div:last-child, .about .body{display:none!important}
+#wanderwitty .nb-top{grid-template-columns:1fr!important}
+.about .next-line{margin:22px 0 0; opacity:.8}
+.ws-num{margin-bottom:28px}
+.nb-mast .ch-num{margin-bottom:-6px}
 
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important; transition-duration:.01s!important}
