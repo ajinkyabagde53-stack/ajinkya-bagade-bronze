@@ -5,11 +5,11 @@
 
 /* The fly-through: "Six signals", one stop per discipline */
 window.SIGNALS = [
-  { id:"writer", label:"Writer", line:"Where it started: how one line stops a scroll." },
   { id:"performance", label:"Performance", line:"₹89L+ across Google and Meta, read for decisions." },
   { id:"social", label:"Social", line:"53K+ organic views, with zero paid spend." },
-  { id:"email", label:"Email", line:"Lifecycle flows where no enquiry slips through." },
+  { id:"writer", label:"Writer", line:"Where it started: how one line stops a scroll." },
   { id:"design", label:"Design", line:"Collateral for luxury homes, brief to final file." },
+  { id:"email", label:"Email", line:"Lifecycle flows where no enquiry slips through." },
   { id:"ai", label:"AI & tools", line:"Agents and tools built from scratch, live in the browser." }
 ];
 /* [signal, image or "card", caption or card title, width factor or card line] */
